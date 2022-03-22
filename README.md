@@ -31,7 +31,7 @@ reglas de estilo de programacion en el futuro, por le momento solo me centrare
 en agregar los programas mas usados y su forma de instalacion ya sea manual o
 automatica.
 
-De antemano dejo mi agradecimiento a quien quiera contibuir a mejorar en 
+De antemano dejo mi agradecimiento a quien quiera contribuir a mejorar en 
 cualquier forma este script y espero que a las personas que como yo estan
 empezando a conocer el maravilloso mundo de linux les sirva y les 
 simplifique su instalacion.
