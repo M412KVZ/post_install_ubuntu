@@ -6,7 +6,7 @@ echo -e "\n\t\t\t\t\t\t\t\t\t\e[38:5:13m**********\e[0m \e[38:5:197mMENU\e[0m \e
 
 PS3="Please choose a number: "
 
-select opcion in "LSD [Maual Instalation]" "Terminator [Automatic]" "Neofetch [Automatic]" "Nano [Automatic]" "7z[Automatic]" "Battery Laptop Improve [Automatic]" "SHAsum [Automatic]" "Tor Browser [Manual Instalation]" "Vivaldi Browser [Manual Instalation]" Git "OH-MY-ZSH [Automatic]" "ZSH-Autosuggestions [Automatic]" "ZSH-FastSyntax [Automatic]" "Errors and Help" Exit
+select opcion in "LSD [Maual Instalation]" "Terminator [Automatic]" "Neofetch [Automatic]" "Nano [Automatic]" "7z [Automatic]" "Battery Laptop Improve [Automatic]" "SHAsum [Automatic]" "Tor Browser [Manual Instalation]" "Vivaldi Browser [Manual Instalation]" Git "OH-MY-ZSH [Automatic]" "ZSH-Autosuggestions [Automatic]" "ZSH-FastSyntax [Automatic]" "Errors and Help" Exit
 do
     case $opcion in
 # 1 LSDS
@@ -60,7 +60,7 @@ do
             echo -e "\t\t\t    \e[38:5:200m888     888        888  T88b  888   '   888   888   888   Y8888  d8888888888     888     Y88b. .d88P 888  T88b\e[0m"
             echo -e "\t\t\t    \e[38:5:200m888     8888888888 888   T88b 888       888 8888888 888    Y888 d88P     888     888      lY88888Pl  888   T88b\e[0m\n"
 
-            echo -e "\t\t\t\t\t\t\t\t\t\e[38:5:46m[Auto Instalation]\e[0m"
+            echo -e "\t\t\t\t\t\t\t\t\t\e[38:5:46m[ AUTO INSTALATION ]\e[0m"
 
             echo -e '''\n\t\e[1;31mTerminator\e[0m \e[38:5:160mis an open-source terminal emulator programmed in Java. ━╤-╦︻[▀̿̿Ĺ̯̿̿▀̿ ̿]\e[0m
 
@@ -130,36 +130,36 @@ do
 # 4 Nano
         "Nano [Automatic]")
             
-            echo -e "\t\t\t\t\t\e[7m\e[38:5:46m  GNU nano 4.8                                    New Buffer                                     \e[0m"
-            echo -e "\t\t\t\t\t\e[7m\e[38:5:46m 1\e[0m"
-            echo -e "\t\t\t\t\t\e[7m\e[38:5:46m 2\e[0m                            \e[38:5:46m:::                        The\e[0m"
-            echo -e "\t\t\t\t\t\e[7m\e[38:5:46m 3\e[0m              \e[38:5:46miLE88Dj.  :jD88888Dj:\e[0m"
-            echo -e "\t\t\t\t\t\e[7m\e[38:5:46m 4\e[0m            \e[38:5:46m.LGitE888D.f8GjjjL8888E;       .d8888b.  888b    888 888     888\e[0m"
-            echo -e "\t\t\t\t\t\e[7m\e[38:5:46m 5\e[0m            \e[38:5:46miE   :8888Et.     .G8888.     d88P  Y88b 8888b   888 888     888\e[0m"
-            echo -e "\t\t\t\t\t\e[7m\e[38:5:46m 6\e[0m            \e[38:5:46m;i    E888,        ,8888,     888    888 88888b  888 888     888\e[0m"
-            echo -e "\t\t\t\t\t\e[7m\e[38:5:46m 7\e[0m                  \e[38:5:46mD888,        :8888:     888        888Y88b 888 888     888\e[0m"
-            echo -e "\t\t\t\t\t\e[7m\e[38:5:46m 8\e[0m                  \e[38:5:46mD888,        :8888:     888  88888 888 Y88b888 888     888\e[0m"
-            echo -e "\t\t\t\t\t\e[7m\e[38:5:46m 9\e[0m                  \e[38:5:46mD888,        :8888:     888    888 888  Y88888 888     888\e[0m"
-            echo -e "\t\t\t\t\t\e[7m\e[38:5:46m10\e[0m                  \e[38:5:46mD888,        :8888:     Y88b  d88P 888   Y8888 Y88b. .d88P\e[0m"
-            echo -e "\t\t\t\t\t\e[7m\e[38:5:46m11\e[0m                  \e[38:5:46m888W,        :8888:      lY8888P88 888    Y888  lY88888Pi\e[0m"
-            echo -e "\t\t\t\t\t\e[7m\e[38:5:46m12\e[0m                  \e[38:5:46mW88W,        :8888:\e[0m"
-            echo -e "\t\t\t\t\t\e[7m\e[38:5:46m13\e[0m                  \e[38:5:46mW88W:        :8888:     88888b.   8888b.  88888b.   .d88b.\e[0m"
-            echo -e "\t\t\t\t\t\e[7m\e[38:5:46m14\e[0m                  \e[38:5:46mDGGD:        :8888:     888 l88b     l88b 888 l88b d88^^88b\e[0m"
-            echo -e "\t\t\t\t\t\e[7m\e[38:5:46m15\e[0m                               \e[38:5:46m:8888:     888  888 .d888888 888  888 888  888\e[0m"
-            echo -e "\t\t\t\t\t\e[7m\e[38:5:46m16\e[0m                               \e[38:5:46m:W888:     888  888 888  888 888  888 Y88..88P\e[0m"
-            echo -e "\t\t\t\t\t\e[7m\e[38:5:46m17\e[0m                               \e[38:5:46m:8888:     888  888 lY888888 888  888  lY88Pi\e[0m"
-            echo -e "\t\t\t\t\t\e[7m\e[38:5:46m18\e[0m                                \e[38:5:46mE888i\e[0m"
-            echo -e "\t\t\t\t\t\e[7m\e[38:5:46m19\e[0m                                \e[38:5:46mtW88D                 Text Editor\e[0m"
-            echo -e "\t\t\t\t\t\e[7m\e[38:5:46m20\e[0m"
-            echo -e "\t\t\t\t\t\e[7m\e[38:5:46m21\e[0m                       \e[7m\e[38:5:46m[ Welcome to nano. For basic help, Press Ctrl+G. ]\e[0m"
-            echo -e "\t\t\t\t\t          \e[7m\e[38:5:46m^G\e[0m \e[38:5:46mGet Help\e[0m  \e[7m\e[38:5:46m^O\e[0m \e[38:5:46mWritrOut\e[0m  \e[7m\e[38:5:46m^R\e[0m \e[38:5:46mRead File\e[0m \e[7m\e[38:5:46m^Y\e[0m \e[38:5:46mPrev Page\e[0m \e[7m\e[38:5:46m^K\e[0m \e[38:5:46mCut Text\e[0m  \e[7m\e[38:5:46m^C\e[0m \e[38:5:46mCur Pos\e[0m"
-            echo -e "\t\t\t\t\t          \e[7m\e[38:5:46m^X\e[0m \e[38:5:46mExit\e[0m      \e[7m\e[38:5:46m^J\e[0m \e[38:5:46mJustify\e[0m   \e[7m\e[38:5:46m^W\e[0m \e[38:5:46mWhere is\e[0m  \e[7m\e[38:5:46m^V\e[0m \e[38:5:46mNext Page\e[0m \e[7m\e[38:5:46m^U\e[0m \e[38:5:46mUncut\e[0m     \e[7m\e[38:5:46m^T\e[0m \e[38:5:46mTo Spell\e[0m\n"
-            
-            echo -e '''\t\tGNU nano is a text editor for Unix-like computing systems or operating environments using a command line interface.
+            echo -e "\t\t\t\t\e[7m\e[38:5:46m  GNU nano 4.8                                    New Buffer                                     \e[0m"
+            echo -e "\t\t\t\t\e[7m\e[38:5:46m 1\e[0m"
+            echo -e "\t\t\t\t\e[7m\e[38:5:46m 2\e[0m                            \e[38:5:46m:::                        The\e[0m"
+            echo -e "\t\t\t\t\e[7m\e[38:5:46m 3\e[0m              \e[38:5:46miLE88Dj.  :jD88888Dj:\e[0m"
+            echo -e "\t\t\t\t\e[7m\e[38:5:46m 4\e[0m            \e[38:5:46m.LGitE888D.f8GjjjL8888E;       .d8888b.  888b    888 888     888\e[0m"
+            echo -e "\t\t\t\t\e[7m\e[38:5:46m 5\e[0m            \e[38:5:46miE   :8888Et.     .G8888.     d88P  Y88b 8888b   888 888     888\e[0m"
+            echo -e "\t\t\t\t\e[7m\e[38:5:46m 6\e[0m            \e[38:5:46m;i    E888,        ,8888,     888    888 88888b  888 888     888\e[0m"
+            echo -e "\t\t\t\t\e[7m\e[38:5:46m 7\e[0m                  \e[38:5:46mD888,        :8888:     888        888Y88b 888 888     888\e[0m"
+            echo -e "\t\t\t\t\e[7m\e[38:5:46m 8\e[0m                  \e[38:5:46mD888,        :8888:     888  88888 888 Y88b888 888     888\e[0m"
+            echo -e "\t\t\t\t\e[7m\e[38:5:46m 9\e[0m                  \e[38:5:46mD888,        :8888:     888    888 888  Y88888 888     888\e[0m"
+            echo -e "\t\t\t\t\e[7m\e[38:5:46m10\e[0m                  \e[38:5:46mD888,        :8888:     Y88b  d88P 888   Y8888 Y88b. .d88P\e[0m"
+            echo -e "\t\t\t\t\e[7m\e[38:5:46m11\e[0m                  \e[38:5:46m888W,        :8888:      lY8888P88 888    Y888  lY88888Pi\e[0m"
+            echo -e "\t\t\t\t\e[7m\e[38:5:46m12\e[0m                  \e[38:5:46mW88W,        :8888:\e[0m"
+            echo -e "\t\t\t\t\e[7m\e[38:5:46m13\e[0m                  \e[38:5:46mW88W:        :8888:     88888b.   8888b.  88888b.   .d88b.\e[0m"
+            echo -e "\t\t\t\t\e[7m\e[38:5:46m14\e[0m                  \e[38:5:46mDGGD:        :8888:     888 l88b     l88b 888 l88b d88^^88b\e[0m"
+            echo -e "\t\t\t\t\e[7m\e[38:5:46m15\e[0m                               \e[38:5:46m:8888:     888  888 .d888888 888  888 888  888\e[0m"
+            echo -e "\t\t\t\t\e[7m\e[38:5:46m16\e[0m                               \e[38:5:46m:W888:     888  888 888  888 888  888 Y88..88P\e[0m"
+            echo -e "\t\t\t\t\e[7m\e[38:5:46m17\e[0m                               \e[38:5:46m:8888:     888  888 lY888888 888  888  lY88Pi\e[0m"
+            echo -e "\t\t\t\t\e[7m\e[38:5:46m18\e[0m                                \e[38:5:46mE888i\e[0m"
+            echo -e "\t\t\t\t\e[7m\e[38:5:46m19\e[0m                                \e[38:5:46mtW88D                 Text Editor\e[0m"
+            echo -e "\t\t\t\t\e[7m\e[38:5:46m20\e[0m"
+            echo -e "\t\t\t\t\e[7m\e[38:5:46m21\e[0m                       \e[7m\e[38:5:46m[ Welcome to nano. For basic help, Press Ctrl+G. ]\e[0m"
+            echo -e "\t\t\t\t          \e[7m\e[38:5:46m^G\e[0m \e[38:5:46mGet Help\e[0m  \e[7m\e[38:5:46m^O\e[0m \e[38:5:46mWritrOut\e[0m  \e[7m\e[38:5:46m^R\e[0m \e[38:5:46mRead File\e[0m \e[7m\e[38:5:46m^Y\e[0m \e[38:5:46mPrev Page\e[0m \e[7m\e[38:5:46m^K\e[0m \e[38:5:46mCut Text\e[0m  \e[7m\e[38:5:46m^C\e[0m \e[38:5:46mCur Pos\e[0m"
+            echo -e "\t\t\t\t          \e[7m\e[38:5:46m^X\e[0m \e[38:5:46mExit\e[0m      \e[7m\e[38:5:46m^J\e[0m \e[38:5:46mJustify\e[0m   \e[7m\e[38:5:46m^W\e[0m \e[38:5:46mWhere is\e[0m  \e[7m\e[38:5:46m^V\e[0m \e[38:5:46mNext Page\e[0m \e[7m\e[38:5:46m^U\e[0m \e[38:5:46mUncut\e[0m     \e[7m\e[38:5:46m^T\e[0m \e[38:5:46mTo Spell\e[0m\n"
+            echo -e "\t\t\t\t\t\t\t\t\t\e[38:5:46m[ AUTO INSTALATION ]\e[0m\n"
+            echo -e '''\t\t\e[38:5:46mGNU nano is a text editor for Unix-like computing systems or operating environments using a command line interface.
                     It emulates the Pico text editor, part of the Pine email client, and also provides additional functionality. 
                     Unlike Pico, nano is licensed under the GNU General Public License (GPL). Released as free software by Chris 
                     Allegretta in 1999,nano became part of the GNU Project in 2001. The logo resembles the lowercase form of the 
-                    Greek letter Eta (η).\n'''
+                    Greek letter Eta (η).\e[0m\n'''
 
                 read -p "Do you want to install Nano?: Yes[y] / Not[Any Key] / Exit[x] " ynx
                     case $ynx in
@@ -169,8 +169,14 @@ do
                         * ) echo -e "\e[1;36mPress\e[0m \e[38:5:46m[Enter]\e[0m \e[1;36mto show Menu\e[0m";;
                     esac
             ;;
+# 5 7z
         "7z [Automatic]")
-                read -p "Do you want to install 7z?: Yes[y] / Not[n] / Exit[x] " ynx
+            echo -e "\t\t\t\t\t\t\t\t\t\t\e[38:5:46m[ AUTO INSTALATION ]\e[0m\n"
+            echo -e '''\t\t7z is a compressed archive file format that supports several different data compression, encryption and 
+                    pre-processing algorithms. The 7z format initially appeared as implemented by the 7-Zip archiver. The 7-Zip 
+                    program is publicly available under the terms of the GNU Lesser General Public License. The LZMA SDK 4.62 was 
+                    placed in the public domain in December 2008.\n'''
+                    read -p "Do you want to install 7z?: Yes[y] / Not[n] / Exit[x] " ynx
                     case $ynx in
                         [Yy]* ) sudo apt-get install p7zip ; sudo apt-get update ; sudo apt-get upgrade;;
                         [Nn]* ) read -p "Press [Enter] to show Menu";;
