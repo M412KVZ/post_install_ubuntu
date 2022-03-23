@@ -129,6 +129,7 @@ do
             ;;
 # 4 Nano
         "Nano [Automatic]")
+            
             echo -e "\t\t\t\t\t\e[7m\e[38:5:46m  GNU nano 4.8                                    New Buffer                                     \e[0m"
             echo -e "\t\t\t\t\t\e[7m\e[38:5:46m 1\e[0m"
             echo -e "\t\t\t\t\t\e[7m\e[38:5:46m 2\e[0m                            \e[38:5:46m:::                        The\e[0m"
@@ -153,6 +154,13 @@ do
             echo -e "\t\t\t\t\t\e[7m\e[38:5:46m21\e[0m                       \e[7m\e[38:5:46m[ Welcome to nano. For basic help, Press Ctrl+G. ]\e[0m"
             echo -e "\t\t\t\t\t          \e[7m\e[38:5:46m^G\e[0m \e[38:5:46mGet Help\e[0m  \e[7m\e[38:5:46m^O\e[0m \e[38:5:46mWritrOut\e[0m  \e[7m\e[38:5:46m^R\e[0m \e[38:5:46mRead File\e[0m \e[7m\e[38:5:46m^Y\e[0m \e[38:5:46mPrev Page\e[0m \e[7m\e[38:5:46m^K\e[0m \e[38:5:46mCut Text\e[0m  \e[7m\e[38:5:46m^C\e[0m \e[38:5:46mCur Pos\e[0m"
             echo -e "\t\t\t\t\t          \e[7m\e[38:5:46m^X\e[0m \e[38:5:46mExit\e[0m      \e[7m\e[38:5:46m^J\e[0m \e[38:5:46mJustify\e[0m   \e[7m\e[38:5:46m^W\e[0m \e[38:5:46mWhere is\e[0m  \e[7m\e[38:5:46m^V\e[0m \e[38:5:46mNext Page\e[0m \e[7m\e[38:5:46m^U\e[0m \e[38:5:46mUncut\e[0m     \e[7m\e[38:5:46m^T\e[0m \e[38:5:46mTo Spell\e[0m\n"
+            
+            echo -e '''\t\tGNU nano is a text editor for Unix-like computing systems or operating environments using a command line interface.
+                    It emulates the Pico text editor, part of the Pine email client, and also provides additional functionality. 
+                    Unlike Pico, nano is licensed under the GNU General Public License (GPL). Released as free software by Chris 
+                    Allegretta in 1999,nano became part of the GNU Project in 2001. The logo resembles the lowercase form of the 
+                    Greek letter Eta (η).\n'''
+
                 read -p "Do you want to install Nano?: Yes[y] / Not[Any Key] / Exit[x] " ynx
                     case $ynx in
                         [Yy]* ) sudo apt-get install nano ; sudo apt-get update ; sudo apt-get upgrade;;
@@ -291,6 +299,7 @@ done
 #                    %%%%%%%%%%%%%%%%%%         888       888 8888888888  "Y8888P88 d88P     888
 #                       %%%%%%%%%%%%%           
 #        power level 10
+#	 youyubedl
 #    proggramms & apps
 #        vlc
 #            skins vlc
@@ -305,7 +314,7 @@ done
 #            JRE
 #        escanner (de impresoras)
 #        trsnamission (Torrent)
-#        visual studio code 
+#        visual studio code
 #            bash ide
 #            bash debug
 #            latex
