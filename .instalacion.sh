@@ -184,7 +184,12 @@ do
                 echo -e "\t\t\t\t\e[48:2:255:1:1m                 %%%%%%%%%%%%%%%%%%         888       888 8888888888  \88888P88 d88P     888        \e[0m"
                 echo -e "\t\t\t\t\e[48:2:255:1:1m                    %%%%%%%%%%%%%                                                                   \e[0m"
                 echo -e "\t\t\t\t\e[48:2:255:1:1m                                                                                                    \e[0m\n"
-            echo -e "\t\t\t\t\t\t\t\t\t\e[38:5:46m[ AUTO INSTALATION ]\e[0m"
+                echo -e "\t\t\t\t\t\t\t\t\t\e[38:5:46m[ AUTO INSTALATION ]\e[0m\n"
+                echo -e "\t\tMEGA es un servicio de almacenamiento en la nube que se utiliza para guardar, compartir o intercambiar archivos de 
+                    forma libre. Se puede acceder a ellos desde Windows, Mac OS X, Linux y desde cualquier dispositivo móvil con internet.
+                    MEGA es la versión mejorada de MegaUpload, servicio de alojamiento de archivos creado por el informático Kim Dotcom en 
+                    el año 2005 y que fue cerrado al igual que rapidshare por el FBI, en una operación policial el 19 de enero de 2012, 
+                    violando la soberanía nacional china, alegando supuesta infracción de derechos de autor.\n"
                 read -p "Do you want to install MEGA?: Yes[y] / Not[Any Key] / Exit[x] " ynx
                     case $ynx in
                         [Yy]* ) sudo apt-get install nano ; sudo apt-get update ; sudo apt-get upgrade;;
