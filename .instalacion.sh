@@ -172,31 +172,33 @@ do
 # 5 Mega
         "Mega [Manual Instalations]")
 
-                echo -e "\t\t\t\t\e[48:2:255:1:1m                                                                                                    \e[0m"
-                echo -e "\t\t\t\t\e[48:2:255:1:1m                     .%%%%%%%%%%,                                                                   \e[0m"
-                echo -e "\t\t\t\t\e[48:2:255:1:1m                 %%%&%%%%%%%%%%%%%%         888b     d888 8888888888  .d8888b.         d8888        \e[0m"
-                echo -e "\t\t\t\t\e[48:2:255:1:1m               %%%%l \%#%%%%%%/ l%%%%       8888b   d8888 888        d88P  Y88b       d88888        \e[0m"
-                echo -e "\t\t\t\t\e[48:2:255:1:1m              %%%%%l  \%%#%%%/  l%%%%%      88888b.d88888 888        888    888      d88P888        \e[0m"
-                echo -e "\t\t\t\t\e[48:2:255:1:1m             *%%%%%l  .__\/__   l%%%%%.     888Y88888P888 8888888    888            d88P 888        \e[0m"
-                echo -e "\t\t\t\t\e[48:2:255:1:1m             .%%%%%l  l%%\/%%l  l%%%%%.     888 Y888P 888 888        888  88888    d88P  888        \e[0m"
-                echo -e "\t\t\t\t\e[48:2:255:1:1m              %%%%%l..l%%%%%%l__l%%%%%      888  Y8P  888 888        888    888   d88P   888        \e[0m"
-                echo -e "\t\t\t\t\e[48:2:255:1:1m               %%%%%%%%%%%%%%%%%%%%%%       888   V   888 888        Y88b  d88P  d8888888888        \e[0m"
-                echo -e "\t\t\t\t\e[48:2:255:1:1m                 %%%%%%%%%%%%%%%%%%         888       888 8888888888  \88888P88 d88P     888        \e[0m"
-                echo -e "\t\t\t\t\e[48:2:255:1:1m                    %%%%%%%%%%%%%                                                                   \e[0m"
-                echo -e "\t\t\t\t\e[48:2:255:1:1m                                                                                                    \e[0m\n"
-                echo -e "\t\t\t\t\t\t\t\t\t\e[38:5:46m[ AUTO INSTALATION ]\e[0m\n"
-                echo -e "\t\tMEGA es un servicio de almacenamiento en la nube que se utiliza para guardar, compartir o intercambiar archivos de 
-                    forma libre. Se puede acceder a ellos desde Windows, Mac OS X, Linux y desde cualquier dispositivo móvil con internet.
-                    MEGA es la versión mejorada de MegaUpload, servicio de alojamiento de archivos creado por el informático Kim Dotcom en 
-                    el año 2005 y que fue cerrado al igual que rapidshare por el FBI, en una operación policial el 19 de enero de 2012, 
-                    violando la soberanía nacional china, alegando supuesta infracción de derechos de autor.\n"
-                read -p "Do you want to install MEGA?: Yes[y] / Not[Any Key] / Exit[x] " ynx
-                    case $ynx in
-                        [Yy]* ) sudo apt-get install nano ; sudo apt-get update ; sudo apt-get upgrade;;
-                        [Nn]* ) read -p "Press [Enter] to show Menu";;
-                        [Xx]* ) exit;;
-                        * ) echo -e "\e[1;36mPress\e[0m \e[38:5:46m[Enter]\e[0m \e[1;36mto show Menu\e[0m";;
-                    esac
+            echo -e "\t\t\t\t\e[37m\e[48:2:255:1:1m                                                                                                       \e[0m"
+            echo -e "\t\t\t\t\e[37m\e[48:2:255:1:1m                     .%%%%%%%%%%,                                                                      \e[0m"
+            echo -e "\t\t\t\t\e[37m\e[48:2:255:1:1m                 %%%&%%%%%%%%%%%%%%         888b     d888 8888888888  .d8888b.         d8888           \e[0m"
+            echo -e "\t\t\t\t\e[37m\e[48:2:255:1:1m               %%%%l \%#%%%%%%/ l%%%%       8888b   d8888 888        d88P  Y88b       d88888           \e[0m"
+            echo -e "\t\t\t\t\e[37m\e[48:2:255:1:1m              %%%%%l  \%%#%%%/  l%%%%%      88888b.d88888 888        888    888      d88P888           \e[0m"
+            echo -e "\t\t\t\t\e[37m\e[48:2:255:1:1m             *%%%%%l  .__\/__   l%%%%%.     888Y88888P888 8888888    888            d88P 888           \e[0m"
+            echo -e "\t\t\t\t\e[37m\e[48:2:255:1:1m             .%%%%%l  l%%\/%%l  l%%%%%.     888 Y888P 888 888        888  88888    d88P  888           \e[0m"
+            echo -e "\t\t\t\t\e[37m\e[48:2:255:1:1m              %%%%%l..l%%%%%%l__l%%%%%      888  Y8P  888 888        888    888   d88P   888           \e[0m"
+            echo -e "\t\t\t\t\e[37m\e[48:2:255:1:1m               %%%%%%%%%%%%%%%%%%%%%%       888   V   888 888        Y88b  d88P  d8888888888           \e[0m"
+            echo -e "\t\t\t\t\e[37m\e[48:2:255:1:1m                 %%%%%%%%%%%%%%%%%%         888       888 8888888888  \88888P88 d88P     888           \e[0m"
+            echo -e "\t\t\t\t\e[37m\e[48:2:255:1:1m                    %%%%%%%%%%%%%                                                                      \e[0m"
+            echo -e "\t\t\t\t\e[37m\e[48:2:255:1:1m                                                                                                       \e[0m\n"
+            echo -e '''\t\t\t\t\t\t\t\t\e[38:5:46m[*** MANUAL INSTALATION ***]\e[0m\n
+            \e[37m\e[48:2:255:1:1m MEGA \e[0m es un servicio de almacenamiento en la nube que se utiliza para guardar, compartir o intercambiar archivos de 
+            forma libre. Se puede acceder a ellos desde Windows, Mac OS X, Linux y desde cualquier dispositivo móvil con internet.
+            \e[37m\e[48:2:255:1:1m MEGA \e[0m es la versión mejorada de \e[7m\e[38:5:202m MegaUpload \e[0m, servicio de alojamiento de archivos creado por el informático Kim Dotcom en 
+            el año 2005 y que fue cerrado al igual que \e[7m\e[48:5:17m Rapidshare \e[0m por el FBI, en una operación policial el 19 de enero de 2012, 
+            violando la soberanía nacional china, alegando supuesta infracción de derechos de autor.\n
+                1.- Ir a al pagina de MEGA \e[38:5:45mhttps://mega.io\e[0m
+                2.- En la pestaña plataformas elegimos MEGA CMD \e[38:5:45mhttps://mega.io/cmd\e[0m
+                3.- En la pestaña Linux elegimos la descarga para muestra distribucion y tambien nos dara el comando para instalarlo.
+                4.- Para saber que distribucion de linux tenemos escribimos el siguiente comando;
+
+                    \e[38:5:220m> lsb_release -d\e[0m
+
+                y listo podremos listar con el comando "lsd -l" y nos apareceran iconos y colores en los archivos.\n'''
+            read -p "Press [Enter] to continue"
             ;;
 # 6 7z
         "7z [Automatic]")
@@ -301,12 +303,11 @@ Error'''
         read -p "Press [Enter] to return Menu"
             ;;
         Exit)
-                read - -p Do you want to Exit Menu Instalation?: Yes[y] / Or press [Any Key] to retun Menu Menu Instalation;  y
-                    case $y in
-                        [Yy]* ) exit;;
-                        [Nn]* ) read -p "Press [Enter] to show Menu";;
-                        * ) echo -e "\e[1;36mPress\e[0m \e[38:5:46m[Enter]\e[0m \e[1;36mto show Menu\e[0m";;
-                    esac
+            read -p "Do you want to Exit Menu Instalation?: Yes[y] / Or press [Any Key] to retun Menu Menu Instalation;"  yn
+                case $y in
+                    [Yy]* ) exit;;
+                    [Nn]* ) read -p "Press [Enter] to show Menu";;
+                esac
             ;;
         *)
             echo -e "\n\e[1;5;31mYou have not chosen a valid option, Try again\e[0m \n\n\e[0;96mPlease select an option between (1..15)!\e[0m \e[38:5:220mPress\e[0m \e[38:5:46m[Enter]\e[0m \e[38:5:220mto show Menu\e[0m"
