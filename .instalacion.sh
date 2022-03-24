@@ -6,7 +6,7 @@ echo -e "\n\t\t\t\t\t\t\t\t\t\e[38:5:13m**********\e[0m \e[38:5:197mMENU\e[0m \e
 
 PS3="Please choose a number: "
 
-select opcion in "LSD [Maual Instalation]" "Terminator [Automatic]" "Neofetch [Automatic]" "Nano [Automatic]" "7z [Automatic]" "Battery Laptop Improve [Automatic]" "SHAsum [Automatic]" "Tor Browser [Manual Instalation]" "Vivaldi Browser [Manual Instalation]" Git "OH-MY-ZSH [Automatic]" "ZSH-Autosuggestions [Automatic]" "ZSH-FastSyntax [Automatic]" "Errors and Help" Exit
+select opcion in "LSD [Maual Instalation]" "Terminator [Automatic]" "Neofetch [Automatic]" "Nano [Automatic]" "Mega [Manual Instalations]" "7z [Automatic]" "Battery Laptop Improve [Automatic]" "SHAsum [Automatic]" "Tor Browser [Manual Instalation]" "Vivaldi Browser [Manual Instalation]" Git "OH-MY-ZSH [Automatic]" "ZSH-Autosuggestions [Automatic]" "ZSH-FastSyntax [Automatic]" "Errors and Help" Exit
 do
     case $opcion in
 # 1 LSDS
@@ -86,16 +86,16 @@ do
 # 3 Neofetch
         "Neofetch [Automatic]")
 
-            echo -e "\t\t\t\t\t\t\t\e[38:5:1m888b    888                    .d888          888             888\e[0m"
-            echo -e "\t\t\t\t\t\t\t\e[38:5:2m8888b   888                   d88Pl           888             888\e[0m"
-            echo -e "\t\t\t\t\t\t\t\e[38:5:3m88888b  888                   888             888             888\e[0m"
-            echo -e "\t\t\t\t\t\t\t\e[38:5:7m888Y88b 888  .d88b.   .d88b.  888888  .d88b.  888888  .d8888b 88888b.\e[0m"
-            echo -e "\t\t\t\t\t\t\t\e[38:5:8m888 Y88b888 d8P  Y8b d88/\88b 888    d8P  Y8b 888    d88P/    888 \88b\e[0m"
-            echo -e "\t\t\t\t\t\t\t\e[38:5:6m888  Y88888 88888888 888  888 888    88888888 888    888      888  888\e[0m"
-            echo -e "\t\t\t\t\t\t\t\e[38:5:5m888   Y8888 Y8b.     Y88..88P 888    Y8b.     Y88b.  Y88b.    888  888\e[0m"
-            echo -e "\t\t\t\t\t\t\t\e[38:5:4m888    Y888  \Y8888   \Y88P/  888     \Y8888   \Y888  \Y8888P 888  888\e[0m\n"
+            echo -e "\t\t\t\t\t\t\e[38:5:1m888b    888                    .d888          888             888\e[0m"
+            echo -e "\t\t\t\t\t\t\e[38:5:2m8888b   888                   d88Pl           888             888\e[0m"
+            echo -e "\t\t\t\t\t\t\e[38:5:3m88888b  888                   888             888             888\e[0m"
+            echo -e "\t\t\t\t\t\t\e[38:5:7m888Y88b 888  .d88b.   .d88b.  888888  .d88b.  888888  .d8888b 88888b.\e[0m"
+            echo -e "\t\t\t\t\t\t\e[38:5:8m888 Y88b888 d8P  Y8b d88/\88b 888    d8P  Y8b 888    d88P/    888 \88b\e[0m"
+            echo -e "\t\t\t\t\t\t\e[38:5:6m888  Y88888 88888888 888  888 888    88888888 888    888      888  888\e[0m"
+            echo -e "\t\t\t\t\t\t\e[38:5:5m888   Y8888 Y8b.     Y88..88P 888    Y8b.     Y88b.  Y88b.    888  888\e[0m"
+            echo -e "\t\t\t\t\t\t\e[38:5:4m888    Y888  \Y8888   \Y88P/  888     \Y8888   \Y888  \Y8888P 888  888\e[0m\n"
 
-            echo -e "\t\t\t\t\t\t\t\t\t\t\e[38:5:46m[ AUTO INSTALATION ]\e[0m"
+            echo -e "\t\t\t\t\t\t\t\t\t\e[38:5:46m[ AUTO INSTALATION ]\e[0m"
 
             echo -e '''\n\t\e[38:5:46mNeofetch\e[0m \e[38:5:154mis a command-line system information tool written in bash 3.2+. Neofetch displays information about your operating\e[0m
             \e[38:5:155msystem, software and hardware in an aesthetic and visually pleasing way.\e[0m
@@ -169,14 +169,38 @@ do
                         * ) echo -e "\e[1;36mPress\e[0m \e[38:5:46m[Enter]\e[0m \e[1;36mto show Menu\e[0m";;
                     esac
             ;;
-# 5 7z
+# 5 Mega
+        "Mega [Manual Instalations]")
+
+                echo -e "\t\t\t\t\e[48:2:255:1:1m                                                                                                    \e[0m"
+                echo -e "\t\t\t\t\e[48:2:255:1:1m                     .%%%%%%%%%%,                                                                   \e[0m"
+                echo -e "\t\t\t\t\e[48:2:255:1:1m                 %%%&%%%%%%%%%%%%%%         888b     d888 8888888888  .d8888b.         d8888        \e[0m"
+                echo -e "\t\t\t\t\e[48:2:255:1:1m               %%%%l \%#%%%%%%/ l%%%%       8888b   d8888 888        d88P  Y88b       d88888        \e[0m"
+                echo -e "\t\t\t\t\e[48:2:255:1:1m              %%%%%l  \%%#%%%/  l%%%%%      88888b.d88888 888        888    888      d88P888        \e[0m"
+                echo -e "\t\t\t\t\e[48:2:255:1:1m             *%%%%%l  .__\/__   l%%%%%.     888Y88888P888 8888888    888            d88P 888        \e[0m"
+                echo -e "\t\t\t\t\e[48:2:255:1:1m             .%%%%%l  l%%\/%%l  l%%%%%.     888 Y888P 888 888        888  88888    d88P  888        \e[0m"
+                echo -e "\t\t\t\t\e[48:2:255:1:1m              %%%%%l..l%%%%%%l__l%%%%%      888  Y8P  888 888        888    888   d88P   888        \e[0m"
+                echo -e "\t\t\t\t\e[48:2:255:1:1m               %%%%%%%%%%%%%%%%%%%%%%       888   V   888 888        Y88b  d88P  d8888888888        \e[0m"
+                echo -e "\t\t\t\t\e[48:2:255:1:1m                 %%%%%%%%%%%%%%%%%%         888       888 8888888888  \88888P88 d88P     888        \e[0m"
+                echo -e "\t\t\t\t\e[48:2:255:1:1m                    %%%%%%%%%%%%%                                                                   \e[0m"
+                echo -e "\t\t\t\t\e[48:2:255:1:1m                                                                                                    \e[0m\n"
+            echo -e "\t\t\t\t\t\t\t\t\t\e[38:5:46m[ AUTO INSTALATION ]\e[0m"
+                read -p "Do you want to install MEGA?: Yes[y] / Not[Any Key] / Exit[x] " ynx
+                    case $ynx in
+                        [Yy]* ) sudo apt-get install nano ; sudo apt-get update ; sudo apt-get upgrade;;
+                        [Nn]* ) read -p "Press [Enter] to show Menu";;
+                        [Xx]* ) exit;;
+                        * ) echo -e "\e[1;36mPress\e[0m \e[38:5:46m[Enter]\e[0m \e[1;36mto show Menu\e[0m";;
+                    esac
+            ;;
+# 6 7z
         "7z [Automatic]")
             echo -e "\t\t\t\t\t\t\t\t\t\t\e[38:5:46m[ AUTO INSTALATION ]\e[0m\n"
             echo -e '''\t\t7z is a compressed archive file format that supports several different data compression, encryption and 
                     pre-processing algorithms. The 7z format initially appeared as implemented by the 7-Zip archiver. The 7-Zip 
                     program is publicly available under the terms of the GNU Lesser General Public License. The LZMA SDK 4.62 was 
                     placed in the public domain in December 2008.\n'''
-                    read -p "Do you want to install 7z?: Yes[y] / Not[n] / Exit[x] " ynx
+                read -p "Do you want to install 7z?: Yes[y] / Not[n] / Exit[x] " ynx
                     case $ynx in
                         [Yy]* ) sudo apt-get install p7zip ; sudo apt-get update ; sudo apt-get upgrade;;
                         [Nn]* ) read -p "Press [Enter] to show Menu";;
@@ -293,17 +317,6 @@ done
 #        lolcat
 #        caosay
 #        fortune
-#        mega
-#                       .%%%%%%%%%%,            
-#                    %%%&%%%%%%%%%%%%%%         888b     d888 8888888888  .d8888b.         d8888
-#                  %%%%l \%#%%%%%%/ l%%%%       8888b   d8888 888        d88P  Y88b       d88888
-#                 %%%%%l  \%%#%%%/  l%%%%%      88888b.d88888 888        888    888      d88P888
-#                *%%%%%l  .__\/__   l%%%%%.     888Y88888P888 8888888    888            d88P 888
-#                .%%%%%l  l##  ##l  l%%%%%.     888 Y888P 888 888        888  88888    d88P  888
-#                 %%%%%l..l%%%%%%l__l%%%%%      888  Y8P  888 888        888    888   d88P   888
-#                  %%%%%%%%%%%%%%%%%%%%%%       888   V   888 888        Y88b  d88P  d8888888888
-#                    %%%%%%%%%%%%%%%%%%         888       888 8888888888  "Y8888P88 d88P     888
-#                       %%%%%%%%%%%%%           
 #        power level 10
 #	 youyubedl
 #    proggramms & apps
