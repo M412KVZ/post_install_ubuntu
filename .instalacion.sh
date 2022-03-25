@@ -325,7 +325,8 @@ Do you want to install ZSH-FastSyntax?: Yes[y] / Not[n] / Exit[x] ''' ynx
         Solution 2:
             > root|etc|apt|sources.list.d
             > sudo su rm "nombre_archivo"
-Error'''
+        Error
+        informacon de como instalar o desisntalar paquetes de uubuntu https://howtoinstall.co/'''
         read -p "Press [Enter] to return Menu"
             ;;
         Exit)
