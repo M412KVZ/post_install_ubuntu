@@ -344,14 +344,34 @@ Do you want to install ZSH-FastSyntax?: Yes[y] / Not[n] / Exit[x] ''' ynx
 done
 #instalar
 #    terminal
-#        cmatrix
-#        figlet
-#            fuentes
-#        lolcat
-#        caosay
-#        fortune
-#        power level 10
-#	 youyubedl
+#        wget (Pendiente)
+#            Wget es una herramienta que nos permitirá la descarga de contenido que provienen de servidores web bajo protocolos 
+#            como ftp o https. Para la gestión de estas descargas nos encontraremos con un comando que permite descargar fácilmente 
+#            repositorios por muy complejos que sean además de otras tareas.
+#            El comando wget ha sido desarrollado como un paquete de software totalmente gratuito gracias al cual podremos descargar 
+#            archivos usando protocolos como HTTP, HTTPS, FTP y FTPS. Esto convierte en wget en una herramienta de línea de comandos 
+#            no interactiva, la cual puede ser implementada en scripts, trabajos cron o bien en terminales que no cuentan con 
+#            soporte de X-Windows.
+#        curl (Pendiente)
+#            Curl es una herramienta de línea de comandos que le permite transferir datos hacia o desde un servidor remoto. Con curl,
+#            puede descargar o cargar datos utilizando uno de los protocolos compatibles, incluidos HTTP, HTTPS, SCP, SFTP y FTP.
+#        cmatrix (Pendiente)
+#            CMatrix es un programa simple que muestra las geniales líneas de desplazamiento de la matriz en el terminal como la 
+#            popular película de ciencia ficción “The Matrix”. Está disponible en el centro de software de ubuntu o instálelo con la 
+#            línea de comandos.
+#        figlet (Pendiente)
+#            FIGlet es una utilidad de para la terminal, simple en su uso y con la que crear banners de texto ASCII o letras grandes. 
+#            Podremos crear estos banners utilizando varias tipografías, formadas por letras compuestas por conglomerados de 
+#            caracteres ASCII más pequeños.
+#               Instalar fuentes figlets (Pendiente)
+#        lolcat (Pendiente)
+#            Lolcat es una utilidad para Linux, BSD y OSX que concatena de manera similar al comando cat y le agrega colores de 
+#            arcoíris. Lolcat se utiliza principalmente para colorear texto en forma de arco iris en la terminal de Linux.
+#        caosay (Pendiente)
+#        fortune (Pendiente)
+#        power level 10k (Pendiente por eleccion vs ho-my-posh)
+#        oh-my-posh (Pendiente por eleccion  entre power level 10k)
+#	     youyubedl
 #    proggramms & apps
 #        vlc
 #            skins vlc
