@@ -189,10 +189,10 @@ do
             echo -e "\t\t\t\t\e[1;37m\e[48:2:255:1:1m                    %%%%%%%%%%%%%                                                                      \e[0m"
             echo -e "\t\t\t\t\e[1;37m\e[48:2:255:1:1m                                                                                                       \e[0m\n"
             echo -e '''\t\t\t\t\t\t\t\t\e[38:5:46m[*** MANUAL INSTALATION ***]\e[0m\n
-            \e[1;37m\e[48:2:255:1:1m MEGA \e[0m es un servicio de almacenamiento en la nube que se utiliza para guardar, compartir o intercambiar archivos de 
-            forma libre. Se puede acceder a ellos desde Windows, Mac OS X, Linux y desde cualquier dispositivo móvil con internet.
+            \e[1;37m\e[48:2:255:1:1m MEGA \e[0m es un servicio de almacenamiento en la nube que se utiliza para guardar, compartir o intercambiar archivos de forma libre.
+                Se puede acceder a el desde Windows, Mac OS X, Linux y desde cualquier dispositivo móvil con internet.
             \e[1;37m\e[48:2:255:1:1m MEGA \e[0m es la versión mejorada de \e[1;7m\e[38:5:202m MegaUpload \e[0m, servicio de alojamiento de archivos creado por el informático Kim Dotcom en 
-            el año 2005 y que fue cerrado al igual que \e[1m\e[107;2;255;1;34m RapidShare \e[0m por el FBI, en una operación policial, por infracción de derechos de autor.\n
+                el año 2005 y que fue cerrado al igual que \e[1m\e[107;2;255;1;34m RapidShare \e[0m por el FBI, en una operación policial, por infracción de derechos de autor.\n
                 1.- Ir a al pagina de MEGA \e[38:5:45mhttps://mega.io\e[0m
                 2.- En la pestaña plataformas elegimos MEGA CMD \e[38:5:45mhttps://mega.io/cmd\e[0m
                 3.- Para saber que distribucion de linux tenemos, escribimos el siguiente comando en una terminal.
@@ -203,7 +203,7 @@ do
                 5.- Escribimos el comando de instalacion que nos dieron al momento de descargar y listo!!! ya podemos almacenar en la nube.\n'''
             read -p "Press [Enter] to continue"
             echo -e '''
-                6.- Todos los comandos para interactuar con la shell llevan \e[38:5:220m"mega-"\e[0m aqui estan los mas comunes:
+                6.- Todos los comandos para interactuar con la terminal llevan \e[38:5:220m"mega-"\e[0m aqui estan los mas comunes:
 
                     \e[38:5:220m> mega-help\e[0m para mostrar los comandos
                     \e[38:5:220m> mega-help -ff\e[0m para mostrar mas informacion de uso de los comandos
@@ -220,8 +220,10 @@ do
                     nos llegara a nuestro correo un link para confirmar la creacion de la cuenta, copiamos el link y lo ponemos en el siguiente comando
                     \e[38:5:220m> mega-confirm url_to_confirm your_password\e[0m parar confirmar la cuenta
 
-                9.- Otra alternativa a \e[1;37m\e[48:2:255:1:1m MEGA \e[0m es "\e[3m\e[1m\e[107;97;255;1;44m ~MediaFire \e[0m aunque el proyecto no esta tan desarrollado para las shell.\n'''
-            
+                7.- Otra alternativa a \e[1;37m\e[48:2:255:1:1m MEGA \e[0m es "\e[3m\e[1m\e[107;97;255;1;44m ~MediaFire \e[0m aunque el proyecto no esta tan desarrollado para las terminales.
+                8.- Algunas de las ventajas de usar \e[1;37m\e[48:2:255:1:1m MEGA \e[0m desde una terminal, es que es mas rapido y no ejecuta java ni html, aunque si se debe tener 
+                    conocimiento basico-medio para su uso.\n'''
+
             read -p "That's all information, Press [Enter] to return Menu"
             ;;
 # 6 7z
@@ -336,7 +338,6 @@ Error'''
             ;;
         *)
             echo -e "\n\e[1;5;31mYou have not chosen a valid option, Try again\e[0m \n\n\e[0;96mPlease select an option between (1..16)!\e[0m \e[38:5:220mPress\e[0m \e[38:5:46m[Enter]\e[0m \e[38:5:220mto show Menu\e[0m"
-#                        [Texteo Color Rojo + Parpadeo]                                [Texto en color cyan]                                                         [Texto en color verde]
             ;;
     esac
 done
