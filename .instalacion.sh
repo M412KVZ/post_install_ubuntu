@@ -19,8 +19,8 @@ do
             echo -e "\t\t\t\e[38:5:2m888\e[0m            \e[38:5:3ml888\e[0m \e[38:5:1m888    888\e[0m         \e[38:5:4mY88b\e[0m     \e[38:5:5m888\e[0m  \e[38:5:6mY8888b.\e[0m \e[38:5:7m888  888\e[0m     \e[38:5:2m888  888\e[0m \e[38:5:1m88888888\e[0m \e[38:5:3m888\e[0m \e[38:5:7m888  888\e[0m   \e[38:5:4mX88K\e[0m   \e[38:5:5m88888888\e[0m    \e[38:5:6md88P\e[0m"
             echo -e "\t\t\t\e[38:5:2m888\e[0m      \e[38:5:3mY88b  d88P\e[0m \e[38:5:1m888  .d88P\e[0m          \e[38:5:4mY88b.\e[0m   \e[38:5:5m888\e[0m      \e[38:5:6mX88\e[0m \e[38:5:7mY88b 888\e[0m     \e[38:5:2mY88b 888\e[0m \e[38:5:1mY8b.\e[0m     \e[38:5:3m888\e[0m \e[38:5:7mY88b 888\e[0m \e[38:5:4m.d8##8b.\e[0m \e[38:5:5mY8b.\e[0m      \e[38:5:6m.d88P\e[0m"
             echo -e "\t\t\t\e[38:5:2m88888888\e[0m   \e[38:5:3mlY8888P\e[0m  \e[38:5:1m8888888P\e[0m             \e[38:5:4mlY88\e[0m   \e[38:5:5m888\e[0m  \e[38:5:6m88888P\e[0m   \e[38:5:7mlY88888\e[0m       \e[38:5:2mY88888\e[0m   \e[38:5:1m8888\e[0m    \e[38:5:3m888\e[0m  \e[38:5:7mY88888\e[0m \e[38:5:4m888   888\e[0m  \e[38:5:5mY8888\e[0m  \e[38:5:6mi88P\e[0m"
-            echo -e '''\n\n\t\t\t\t\t\t\t\t\e[38:5:220mLSD (lsd Deluxe)\e[0m \e[38:5:46m[*** MANUAL INSTALATION ***]\e[0m\n\n
-            This project is a rewrite of GNU "ls" with lot of added features like colors, icons, tree-view, more formatting options etc. 
+            echo -e '''\n\n\t\t\t\t\t\t\t\t\e[38:5:220m\e[0m \e[38:5:46m[*** MANUAL INSTALATION ***]\e[0m\n\n
+            LSD (lsd Deluxe) this project is a rewrite of GNU "ls" with lot of added features like colors, icons, tree-view, more formatting options etc. 
             The project is heavily inspired by the super colorls project.\n'''
             echo -e '''
                 1.- Ir al repositorio de git \e[38:5:45mhttps://github.com/Peltoche/lsd#theme\e[0m
@@ -32,9 +32,10 @@ do
                         \e[38:5:220m> sudo dpkg -i "nombre_del_archivo_lsd.deb"\e[0m
 
                     y listo podremos listar con el comando "lsd -l" y nos apareceran iconos y colores en los archivos.\n'''
-                read -p "Press [Enter] to continue"
 
                 echo -e "\t\t\e[38:5:46mTIP!!!\e[0m"
+
+            read -p "Press [Enter] to continue"
 
                 echo -e '''
                     A.- Dependiendo de la shell que tengamos (bash, zsh, etc), podemos asignar alias a algun comando para hacer mas agil la ejecucion.
@@ -44,8 +45,10 @@ do
 
                         ii.- Al final del archivo ecribimos los "alias" que queramos, estos son alguno ejemplos:
 
-                            \e[38:5:220malias l="lsd -l"\e[0m           \e[38:5:220malias gs="git status"\e[0m
-                            \e[38:5:220malias ll="lsd -alps"\e[0m       \e[38:5:220malias up="sudo apt-get update && sudo apt-get upgrade"\e[0m\n'''
+                            \e[38:5:220malias l="lsd -l"\e[0m
+                            \e[38:5:220malias ll="lsd -alps"\e[0m
+                            \e[38:5:220malias gs="git status"\e[0m
+                            \e[38:5:220malias up="sudo apt-get update && sudo apt-get upgrade"\e[0m\n'''
                     read -p "That's all information, Press [Enter] to return Menu"
             echo -e "\n"
             ;;
@@ -200,13 +203,22 @@ do
                 5.- Escribimos el comando de instalacion que nos dieron al momento de descargar y listo!!! ya podemos almacenar en la nube.\n'''
             read -p "Press [Enter] to continue"
             echo -e '''
-                7.- Para conocer los comandos basicos abrimos una terminal y escribimos:
+                6.- Todos los comandos para interactuar con la shell llevan \e[38:5:220m"mega-"\e[0m aqui estan los mas comunes:
 
-                    \e[38:5:220m> mega-help -f\e[0m
-
-                8.- Para usarlo abrimos una terminal y escribimos:
-
-                    \e[38:5:220m> mega-login example123@example.com contraseña\e[0m
+                    \e[38:5:220m> mega-help\e[0m para mostrar los comandos
+                    \e[38:5:220m> mega-help -ff\e[0m para mostrar mas informacion de uso de los comandos
+                    \e[38:5:220m> mega-ls\e[0m para listar
+                    \e[38:5:220m> mega-cd\e[0m para cambiar de directorio
+                    \e[38:5:220m> mega-rm\e[0m para borrar archivos o directorios
+                    \e[38:5:220m> mega-mkdir\e[0m para crear un directorio
+                    \e[38:5:220m> mega-mv\e[0m para mover/renombrar archivos o directorios
+                    \e[38:5:220m> mega-put -c directorio/archivo.txt\e[0m para subir un directorios/archivos
+                    \e[38:5:220m> mega-get directorio/archivo.txt\e[0m para descargar directorios/archivos
+                    \e[38:5:220m> mega-logout\e[0m para cerrar sesion
+                    \e[38:5:220m> mega-login example@mail.com password \e[0m para iniciar sesion (cuando ya se tiene una cuenta)
+                    \e[38:5:220m> mega-signup mail@mail.com password --name="John Smith" create account\e[0m para crear cuenta
+                    nos llegara a nuestro correo un link para confirmar la creacion de la cuenta, copiamos el link y lo ponemos en el siguiente comando
+                    \e[38:5:220m> mega-confirm url_to_confirm your_password\e[0m parar confirmar la cuenta
 
                 9.- Otra alternativa a \e[1;37m\e[48:2:255:1:1m MEGA \e[0m es "\e[3m\e[1m\e[107;97;255;1;44m ~MediaFire \e[0m aunque el proyecto no esta tan desarrollado para las shell.\n'''
             
