@@ -372,6 +372,7 @@ done
 #        power level 10k (Pendiente por eleccion vs ho-my-posh)
 #        oh-my-posh (Pendiente por eleccion  entre power level 10k)
 #	     youyubedl
+#        bat
 #    proggramms & apps
 #        vlc
 #            skins vlc
