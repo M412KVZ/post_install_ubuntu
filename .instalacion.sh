@@ -200,6 +200,7 @@ do
                     \e[38:5:220m> lsb_release -d\e[0m
 
                 4.- En la pestaña Linux elegimos la descarga para muestra distribucion y tambien nos dara el comando para instalarlo.
+                    que generalmente es sudo apt install ./archivo_mega.deb
                 5.- Escribimos el comando de instalacion que nos dieron al momento de descargar y listo!!! ya podemos almacenar en la nube.\n'''
             read -p "Press [Enter] to continue"
             echo -e '''
@@ -373,6 +374,12 @@ done
 #        oh-my-posh (Pendiente por eleccion  entre power level 10k)
 #	     youyubedl
 #        bat
+#        Pantehon Tweaks (Pendinete)
+#            Es una herramienta esencial para personalizar de manera fácil y segura la apariencia de Pantheon Desktop
+#               sudo apt install software-properties-common
+#               sudo add-apt-repository ppa:philip.scott/pantheon-tweaks
+#               sudo apt-get update
+#               sudo apt-get install pantheon-tweaks
 #    proggramms & apps
 #        vlc
 #            skins vlc
@@ -406,7 +413,12 @@ done
 #        gimp
 #    Varios
 #        fuentes
-#            meslo lgdz mono
+#            NerdFonts.com
+#               meslo lgmdz
+#               terminus
+#               Hack
+#               Moniod
+#               Robot Mono
 #        drivers para impresora
 #        gnome look
 #            themas
