@@ -374,6 +374,8 @@ done
 #        oh-my-posh (Pendiente por eleccion  entre power level 10k)
 #	     youyubedl
 #        bat
+#        zathura (Pendiente)
+#           sudo apt install zathura
 #        Pantehon Tweaks (Pendinete)
 #            Es una herramienta esencial para personalizar de manera fácil y segura la apariencia de Pantheon Desktop
 #               sudo apt install software-properties-common
