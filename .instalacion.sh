@@ -372,6 +372,10 @@ done
 #        fortune (Pendiente)
 #        power level 10k (Pendiente por eleccion vs ho-my-posh)
 #        oh-my-posh (Pendiente por eleccion  entre power level 10k)
+#        trsnamission (Torrent)
+#            sudo apt-get install transmission-cli
+#               transmission-cli "arcvhivo.torrent"
+#               transmission-cli "magnetlink debe estar entre comillas"
 #	     youyubedl
 #        bat
 #        zathura (Pendiente)
@@ -387,7 +391,6 @@ done
 #            skins vlc
 #                skin https://addons.videolan.org/p/1580017
 #            codecs de audio y video
-#        elementary tweaks
 #        telegram
 #        spotify
 #        LibreOffice (Pendiente)
@@ -407,7 +410,6 @@ done
 #            JDK
 #            JRE
 #        escanner (de impresoras)
-#        trsnamission (Torrent)
 #        visual studio code
 #            Configuracion
 #               Fuentes
