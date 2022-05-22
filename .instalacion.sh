@@ -390,7 +390,19 @@ done
 #        elementary tweaks
 #        telegram
 #        spotify
-#        openoffice
+#        LibreOffice (Pendiente)
+#           instalacion
+#               Descargar la version mas actual de la pagina oficial https://es.libreoffice.org/descarga/libreoffice/
+#               tar zxvf LibreOffice_version_Linux_x86-deb.tar.gz 
+#               cd LibreOffice_version_Linux_x86-deb/
+#               cd DEBS/
+#               sudo dpkg -i *.deb
+#            Instalacion del idioma
+#               descargar el paquete de idioma
+#               tar zxvf (descomprimirlo)
+#               cd DEBS/
+#               sudo dpkg -i *.deb
+#               Reiniciar office y listo estra en el idioma deseado
 #        java
 #            JDK
 #            JRE
