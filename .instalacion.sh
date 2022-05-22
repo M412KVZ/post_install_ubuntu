@@ -11,7 +11,6 @@ do
     case $opcion in
 # 1 Terminator
         "Terminator [Automatic]")
-
             echo -e "\t\t\t\e[38:5:197m88888888888 8888888888 8888888b.  888b     d888 8888888 888b    888        d8888 88888888888  .d88888b.  8888888b.\e[0m"
             echo -e "\t\t\t    \e[38:5:197m888     888        888   Y88b 8888b   d8888   888   8888b   888       d88888     888     d88Pi iY88b 888   Y88b\e[0m"
             echo -e "\t\t\t    \e[38:5:198m888     888        888    888 88888b.d88888   888   88888b  888      d88P888     888     888     888 888    888\e[0m"
@@ -20,13 +19,9 @@ do
             echo -e "\t\t\t    \e[38:5:199m888     888        888 T88b   888  Y8P  888   888   888  Y88888   d88P   888     888     888     888 888 T88b\e[0m"
             echo -e "\t\t\t    \e[38:5:200m888     888        888  T88b  888   '   888   888   888   Y8888  d8888888888     888     Y88b. .d88P 888  T88b\e[0m"
             echo -e "\t\t\t    \e[38:5:200m888     8888888888 888   T88b 888       888 8888888 888    Y888 d88P     888     888      lY88888Pl  888   T88b\e[0m\n"
-
             echo -e "\t\t\t\t\t\t\t\t\t\e[38:5:46m[ AUTO INSTALATION ]\e[0m"
-
             echo -e '''\n\t\e[1;31mTerminator\e[0m \e[38:5:160mis an open-source terminal emulator programmed in Java. ━╤-╦︻[▀̿̿Ĺ̯̿̿▀̿ ̿]\e[0m
-
                 \e[38:5:161mFeatures\e[0m 
-
                 \t\e[38:5:161mIt allows you to organize multiple terminals in a single window, so that you can have several sessions open simultaneously.\e[0m
                 \t\e[38:5:162mYou can write to multiple terminals simultaneously, this allows you to launch the same command in different sessions.\e[0m
                 \t\e[38:5:162mIt has a large number of keyboard shortcuts with which to manage the terminals.\e[0m
@@ -35,7 +30,7 @@ do
                 \t\e[38:5:164mYou can take screenshots of a single terminal.\e[0m
                 \t\e[38:5:164mSupports plugins.\e[0m
                 \t\e[38:5:165mSupports tabs.\e[0m\n'''
-                read -p "Do you want to install Terminator?: Yes[y] / Not[Any Key] / Exit[x] " ynx
+                read -p "Do you want to install Terminator?: Yes[y] / Not[n] / Exit[x] " ynx
                     case $ynx in
                         [Yy]* ) sudo add-apt-repository ppa:gnome-terminator ; sudo apt-get install terminator ; 
                                 sudo apt-get update ; sudo apt-get upgrade;;
@@ -202,10 +197,9 @@ do
                 4.- En la pestaña Linux elegimos la descarga para muestra distribucion y tambien nos dara el comando para instalarlo.
                     que generalmente es sudo apt install ./archivo_mega.deb
                 5.- Escribimos el comando de instalacion que nos dieron al momento de descargar y listo!!! ya podemos almacenar en la nube.\n'''
-            read -p "Press [Enter] to continue"
+            read -p "Press [Enter] to show more information"
             echo -e '''
                 6.- Todos los comandos para interactuar con la terminal llevan \e[38:5:220m"mega-"\e[0m aqui estan los mas comunes:
-
                     \e[38:5:220m> mega-help\e[0m para mostrar los comandos
                     \e[38:5:220m> mega-help -ff\e[0m para mostrar mas informacion de uso de los comandos
                     \e[38:5:220m> mega-ls\e[0m para listar
@@ -220,11 +214,9 @@ do
                     \e[38:5:220m> mega-signup mail@mail.com password --name="John Smith" create account\e[0m para crear cuenta
                     nos llegara a nuestro correo un link para confirmar la creacion de la cuenta, copiamos el link y lo ponemos en el siguiente comando
                     \e[38:5:220m> mega-confirm url_to_confirm your_password\e[0m parar confirmar la cuenta
-
                 7.- Otra alternativa a \e[1;37m\e[48:2:255:1:1m MEGA \e[0m es "\e[3m\e[1m\e[107;97;255;1;44m ~MediaFire \e[0m aunque el proyecto no esta tan desarrollado para las terminales.
                 8.- Algunas de las ventajas de usar \e[1;37m\e[48:2:255:1:1m MEGA \e[0m desde una terminal, es que es mas rapido y no ejecuta java ni html, aunque si se debe tener 
-                    conocimiento basico-medio para su uso.\n'''
-
+                    conocimiento basico-medio de los comandos de la terminal para su uso.\n'''
             read -p "That's all information, Press [Enter] to return Menu"
             ;;
 # 6 7z
