@@ -6,7 +6,7 @@ echo -e "\n\t\t\t\t\t\t\t\t\t\e[38:5:13m**********\e[0m \e[38:5:197mMENU\e[0m \e
 
 PS3="Please choose a number: "
 
-select opcion in "Terminator [Automatic]" "LSD [Maual Instalation]" "Neofetch [Automatic]" "Nano [Automatic]" "Mega [Manual Instalations]" "7z [Automatic]" "Battery Laptop Improve [Automatic]" "SHAsum [Automatic]" "Tor Browser [Manual Instalation]" "Vivaldi Browser [Manual Instalation]" Git "OH-MY-ZSH [Automatic]" "ZSH-Autosuggestions [Automatic]" "ZSH-FastSyntax [Automatic]" "Errors and Help" Exit
+select opcion in "Terminator [Automatic]" "LSD [Maual Instalation]" "Neofetch [Automatic]" "Nano [Automatic]" "Mega [Manual Instalations]" "7z [Automatic]" "Battery Laptop Improve [Automatic]" "SHAsum [Automatic]" "Tor Browser [Manual Instalation]" "Vivaldi Browser [Manual Instalation]" Git "ZSH [Automatic]" "OH-MY-ZSH [Automatic]" "ZSH-Autosuggestions [Automatic]" "ZSH-FastSyntax [Automatic]" "Errors and Help" Exit
 do
     case $opcion in
 # 1 Terminator
@@ -58,23 +58,15 @@ do
                     \e[38:5:45mhttps://github.com/Peltoche/lsd/releases\e[0m
                 3.- Bajamos hasta la parte de "Assets" y buscamos algun "x64.deb" ya que lo en una distro derivada de Debian.
                 4.- Abrimos una terminal vamos al directorio donde se descargo el archivo ".deb" y escribimos el siguiente comando:
-
                         \e[38:5:220m> sudo dpkg -i "nombre_del_archivo_lsd.deb"\e[0m
-
                     y listo podremos listar con el comando "lsd -l" y nos apareceran iconos y colores en los archivos.\n'''
-
                 echo -e "\t\t\e[38:5:46mTIP!!!\e[0m"
-
             read -p "Press [Enter] to continue"
-
                 echo -e '''
                     A.- Dependiendo de la shell que tengamos (bash, zsh, etc), podemos asignar alias a algun comando para hacer mas agil la ejecucion.
                         i.- En una terminal desde el directorio "home" escribimos:
-
                             \e[38:5:220m> nano .zshrc\e[0m
-
                         ii.- Al final del archivo ecribimos los "alias" que queramos, estos son alguno ejemplos:
-
                             \e[38:5:220malias l="lsd -l"\e[0m
                             \e[38:5:220malias ll="lsd -alps"\e[0m
                             \e[38:5:220malias gs="git status"\e[0m
@@ -84,7 +76,6 @@ do
             ;;
 # 3 Neofetch
         "Neofetch [Automatic]")
-
             echo -e "\t\t\t\t\t\t\e[38:5:1m888b    888                    .d888          888             888\e[0m"
             echo -e "\t\t\t\t\t\t\e[38:5:2m8888b   888                   d88Pl           888             888\e[0m"
             echo -e "\t\t\t\t\t\t\e[38:5:3m88888b  888                   888             888             888\e[0m"
@@ -93,9 +84,7 @@ do
             echo -e "\t\t\t\t\t\t\e[38:5:6m888  Y88888 88888888 888  888 888    88888888 888    888      888  888\e[0m"
             echo -e "\t\t\t\t\t\t\e[38:5:5m888   Y8888 Y8b.     Y88..88P 888    Y8b.     Y88b.  Y88b.    888  888\e[0m"
             echo -e "\t\t\t\t\t\t\e[38:5:4m888    Y888  \Y8888   \Y88P/  888     \Y8888   \Y888  \Y8888P 888  888\e[0m\n"
-
             echo -e "\t\t\t\t\t\t\t\t\t\e[38:5:46m[ AUTO INSTALATION ]\e[0m"
-
             echo -e '''\n\t\e[38:5:46mNeofetch\e[0m \e[38:5:154mis a command-line system information tool written in bash 3.2+. Neofetch displays information about your operating\e[0m
             \e[38:5:155msystem, software and hardware in an aesthetic and visually pleasing way.\e[0m
             \e[38:5:156mThe overall purpose of Neofetch is to be used in screen-shots of your system. Neofetch shows the information other people want to see.\e[0m
@@ -159,7 +148,6 @@ do
                     Unlike Pico, nano is licensed under the GNU General Public License (GPL). Released as free software by Chris 
                     Allegretta in 1999,nano became part of the GNU Project in 2001. The logo resembles the lowercase form of the 
                     Greek letter Eta (η).\e[0m\n'''
-
                 read -p "Do you want to install Nano?: Yes[y] / Not[Any Key] / Exit[x] " ynx
                     case $ynx in
                         [Yy]* ) sudo apt-get install nano ; sudo apt-get update ; sudo apt-get upgrade;;
@@ -170,7 +158,6 @@ do
             ;;
 # 5 Mega
         "Mega [Manual Instalations]")
-
             echo -e "\t\t\t\t\e[1;37m\e[48:2:255:1:1m                                                                                                       \e[0m"
             echo -e "\t\t\t\t\e[1;37m\e[48:2:255:1:1m                     .%%%%%%%%%%,                                                                      \e[0m"
             echo -e "\t\t\t\t\e[1;37m\e[48:2:255:1:1m                 %%%&%%%%%%%%%%%%%%         888b     d888 8888888888  .d8888b.         d8888           \e[0m"
@@ -191,9 +178,7 @@ do
                 1.- Ir a al pagina de MEGA \e[38:5:45mhttps://mega.io\e[0m
                 2.- En la pestaña plataformas elegimos MEGA CMD \e[38:5:45mhttps://mega.io/cmd\e[0m
                 3.- Para saber que distribucion de linux tenemos, escribimos el siguiente comando en una terminal.
-
                     \e[38:5:220m> lsb_release -d\e[0m
-
                 4.- En la pestaña Linux elegimos la descarga para muestra distribucion y tambien nos dara el comando para instalarlo.
                     que generalmente es sudo apt install ./archivo_mega.deb
                 5.- Escribimos el comando de instalacion que nos dieron al momento de descargar y listo!!! ya podemos almacenar en la nube.\n'''
@@ -234,6 +219,7 @@ do
                         * ) echo "Please answer yes or not: ";;
                     esac
             ;;
+# 7 Battery Improve
         "Battery Laptop Improve [Automatic]")
                 read -p "Do you want to install Battery Laptop Improve?: Yes[y] / Not[n] / Exit[x] " ynx
                     case $ynx in
@@ -244,6 +230,7 @@ do
                         * ) echo "Please answer yes or not: ";;
                     esac
             ;;
+# 8 SHAsum
         "SHAsum [Automatic]")
                 read -p "Do you want to install SHAsum?: Yes[y] / Not[n] / Exit[x] " ynx
                     case $ynx in
@@ -254,6 +241,7 @@ do
                         * ) echo "Please answer yes or not: ";;
                     esac
             ;;
+# 9 Tor Browser
         "Tor Browser [Manual Instalation]")
                 read -p "Do you want to install Tor: Yes[y] / Not[n] / Exit[x] " ynx
                     case $ynx in
@@ -263,11 +251,13 @@ do
                         * ) echo "Please answer yes or not: ";;
                     esac
             ;;
+# 10 Vivaldi Browser
         "Vivaldi Browser [Manual Instalation]")
             echo '''Vivaldi Browser [*** MANUAL INSTALATION ***]
     A.- For install Vivaldi Browser go to https://vivaldi.com/download/ and download the ".DEB" '''
             read -p "Press [Enter] to continue"
             ;;
+# 11 Git
         Git)
                 read -p "Do you want to install Git?: Yes[y] / Not[n] / Exit[x] " ynx
                     case $ynx in
@@ -277,6 +267,17 @@ do
                         * ) echo "Please answer yes or not: ";;
                     esac
             ;;
+# 12 zsh
+        "ZSH [Automatic]")
+                read -p "Do you want to install ZSH?: Yes[y] / Not[n] / Exit[x] " ynx
+                    case $ynx in
+                        [Yy]* ) sudo apt-get update ; sudo apt-get upgrade ; sudo apt-get zsh;;
+                        [Nn]* ) read -p "Press [Enter] to show Menu";;
+                        [Xx]* ) exit;;
+                        * ) echo "Please answer yes or not: ";;
+                    esac
+            ;;
+# 13 OH-MY-ZSH
         "OH-MY-ZSH [Automatic]")
                 read -p "Do you want to install ZSH?: Yes[y] / Not[n] / Exit[x] " ynx
                     case $ynx in
@@ -288,6 +289,7 @@ do
                         * ) echo "Please answer yes or not: ";;
                     esac
             ;;
+# 14 ZSH-Autosuggestions
         "ZSH-Autosuggestions [Automatic]")
                 read -p '''Need install ZSH and GIT first !!!!!!
 Do you want to install ZSH-Autosuggestions?: Yes[y] / Not[n] / Exit[x] ''' ynx
@@ -299,6 +301,7 @@ Do you want to install ZSH-Autosuggestions?: Yes[y] / Not[n] / Exit[x] ''' ynx
                         * ) echo "Please answer yes or not: ";;
                     esac
             ;;
+# 15 ZSH-FastSyntax
         "ZSH-FastSyntax [Automatic]") 
                 read -p '''Need install ZSH and GIT first !!!!!!
 Do you want to install ZSH-FastSyntax?: Yes[y] / Not[n] / Exit[x] ''' ynx
@@ -310,6 +313,7 @@ Do you want to install ZSH-FastSyntax?: Yes[y] / Not[n] / Exit[x] ''' ynx
                         * ) echo "Please answer yes or not: ";;
                     esac
             ;;
+# 16 Errors and Help
         "Errors and Help")
             echo '''Error PAA: Repository does not have a release file
         This can be fixed by deleting the file that origin the error.
@@ -322,6 +326,7 @@ Do you want to install ZSH-FastSyntax?: Yes[y] / Not[n] / Exit[x] ''' ynx
         informacon de como instalar o desisntalar paquetes de uubuntu https://howtoinstall.co/'''
         read -p "Press [Enter] to return Menu"
             ;;
+# 17 Exit
         Exit)
             read -p "Do you want to Exit Menu Instalation?: Yes[y] / Or press [N] to retun Menu Menu Instalation:" yn
                 case $yn in
@@ -331,7 +336,7 @@ Do you want to install ZSH-FastSyntax?: Yes[y] / Not[n] / Exit[x] ''' ynx
                 esac
             ;;
         *)
-            echo -e "\n\e[1;5;31mYou have not chosen a valid option, Try again\e[0m \n\n\e[0;96mPlease select an option between (1..16)!\e[0m \e[38:5:220mPress\e[0m \e[38:5:46m[Enter]\e[0m \e[38:5:220mto show Menu\e[0m"
+            echo -e "\n\e[1;5;31mYou have not chosen a valid option, Try again\e[0m \n\n\e[0;96mPlease select an option between (1..18)!\e[0m \e[38:5:220mPress\e[0m \e[38:5:46m[Enter]\e[0m \e[38:5:220mto show Menu\e[0m"
             ;;
     esac
 done
