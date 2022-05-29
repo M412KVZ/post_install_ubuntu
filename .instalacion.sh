@@ -39,20 +39,21 @@ do
                                 \e[38:5:165mSupports tabs.\e[0m\n'''
                                 opcion=0
                                 while [ $opcion -ne 3 ]; do
-                                    echo -e '''\t\tDo you want to install Terminator?
-                                    [ 1 ] Yes
-                                    [ 2 ] Not, back to Terminals Menu
-                                    [ 3 ] Exit install'''
-                                    read opcion
+                                    echo -e "\e[38:5:46mDo you want to install Terminator?\e[0m\n"
+                                    echo -e "    \e[38:5:46m[ 1 ] Yes\e[0m"
+                                    echo -e "    \e[38:5:46m[ 2 ] Not, back to Terminals Menu\e[0m"
+                                    echo -e "    \e[38:5:46m[ 3 ] Exit installation\e[0m\n"
+                                    #echo -e "\e[1m\e[38:5:197mChoose an option\e[0m"
+                                    read -p "Choose an option: " opcion
                                         case $opcion in                                            
-                                        1) echo "Instalando..." ; sudo add-apt-repository ppa:gnome-terminator ; 
-                                            sudo apt-get update ; sudo apt-get upgrade ; sudo apt-get install terminator ;;
-                                        2) echo -e "\e[1m\e[38:5:197mPress [ Enter ] to back Terminals Menu \e[0m\n"; break;;
-                                        3) exit;;
-                                        *)  echo -e "\n\e[1;5;31mYou have not chosen a valid option, Try again\e[0m \n\n\e[0;96mPlease [ Enter ] to continue\e[0m"
+                                        1) echo -e "\e[38:5:46mInstalando...\e[0m\n" && sudo apt-get update && sudo apt-get upgrade &&
+                                        sudo add-apt-repository ppa:gnome-terminator && sudo apt-get install terminator ;;
+                                        2) echo -e "\n\e[1m\e[38:5:197mPress [ Enter ] to back Terminals Menu \e[0m\n"; break;;
+                                        3) echo -e "" && exit;;
+                                        *) echo -e "\n\e[1;5;31mYou have not chosen a valid option, Try again\e[0m\n"
                                             opcion=0;;
-                                    esac
-                                    echo ""
+                                        esac
+                                    echo -e "\e[38:5:46mPulsa [ Enter ] para contnuar\e[0m\n"
                                     read -p ""
                                     clear
                                 done
@@ -72,22 +73,43 @@ do
 # Menu Terminales-Tilix
                         Tilix)
                             echo -e "Tilix is an advanced GTK3 tiling terminal emulator that follows the Gnome Human Interface Guidelines"
-                                read -p "Do you want to install Tilix?: Yes[y] / Not[Any Key] / Back to Main Menu[x] " ynx
-                                    case $ynx in 
-                                        [Yy]* ) sudo apt-get update ; sudo apt-get upgrade;;
-                                        [Nn]* ) read -p "Press [ Enter ] to show Menu";;
-                                        [Xx]* ) break;;
-                                        * ) echo -e "\n\e[1;36mPress\e[0m \e[38:5:46m[ Enter ]\e[0m \e[1;36mto show Terminals Menu\e[0m\n";;
-                                    esac
+                                opcion=0
+                                while [ $opcion -ne 3 ]; do
+                                    echo -e "\e[38:5:46mDo you want to install Tilix?\e[0m\n"
+                                    echo -e "    \e[38:5:46m[ 1 ] Yes\e[0m"
+                                    echo -e "    \e[38:5:46m[ 2 ] Not, back to Terminals Menu\e[0m"
+                                    echo -e "    \e[38:5:46m[ 3 ] Exit installation\e[0m\n"
+                                    #echo -e "\e[1m\e[38:5:197mChoose an option\e[0m"
+                                    read -p "Choose an option: " opcion
+                                        case $opcion in                                            
+                                        1) echo -e "\e[38:5:46mInstalando...\e[0m\n" && sudo apt-get update && sudo apt-get upgrade &&
+                                        sudo add-apt-repository ppa:gnome-terminator && sudo apt-get install tilix ;;
+                                        2) echo -e "\n\e[1m\e[38:5:197mPress [ Enter ] to back Terminals Menu \e[0m\n"; break;;
+                                        3) echo -e "" && exit;;
+                                        *) echo -e "\n\e[1;5;31mYou have not chosen a valid option, Try again\e[0m\n"
+                                            opcion=0;;
+                                        esac
+                                    echo -e "\e[38:5:46mPulsa [ Enter ] para contnuar\e[0m\n"
+                                    read -p ""
+                                    clear
+                                done
                         ;;
 # Menu Terminales-Regresar al menu
                         "Back Main Menu")
-                        read -p "Do you want to Back Main Manu?: Yes[y] / Not[N]: " yn
-                            case $yn in
-                                [Yy]* ) echo -e "\n\e[1;36mPress\e[0m \e[38:5:46m[ Enter ]\e[0m \e[1;36mto show Menu\e[0m\n"; break;;
-                                [Nn]* ) read -p "Press [ Enter ] to show Menu";;
-                                * ) echo -e "\n\e[1;36mPress\e[0m \e[38:5:46m[ Enter ]\e[0m \e[1;36mto show Menu\e[0m\n";;
-                            esac
+                                opcion=0
+                                while [ $opcion -ne 1 ]; do
+                                    echo -e "Do you want to Back Terminals Manu?"
+                                    echo -e "[ 1 ] Yes"
+                                    read -p "Choose an option: " opcion
+                                        case $opcion in
+                                        1) break;;
+                                        *) echo -e "\n\e[1;5;31mYou have not chosen a valid option, Try again\e[0m\n"
+                                            opcion=0;;
+                                        esac
+                                        echo -e "\e[38:5:46mPulsa [ sdfsdf ] para contnuar\e[0m\n"
+                                        read -p ""
+                                        clear
+                                done
                         ;;
                         *)  echo -e "\n\e[1;5;31mYou have not chosen a valid option, Try again\e[0m \n\n\e[0;96mPlease select an option between (1..3)!\e[0m \e[38:5:220mPress\e[0m \e[38:5:46m[ Enter ]\e[0m \e[38:5:220mto show Terminals Menu\e[0m";;
                     esac
