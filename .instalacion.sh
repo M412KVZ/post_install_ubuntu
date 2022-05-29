@@ -6,39 +6,69 @@ echo -e "\n\t\t\t\t\t\t\t\t\t\e[38:5:13m**********\e[0m \e[38:5:197mMENU\e[0m \e
 
 PS3="Please choose a number: "
 
-select opcion in "Terminator [Automatic]" "LSD [Maual Instalation]" "Neofetch [Automatic]" "Nano [Automatic]" "Mega [Manual Instalations]" "7z [Automatic]" "Battery Laptop Improve [Automatic]" "SHAsum [Automatic]" "Tor Browser [Manual Instalation]" "Vivaldi Browser [Manual Instalation]" Git "ZSH [Automatic]" "OH-MY-ZSH [Automatic]" "ZSH-Autosuggestions [Automatic]" "ZSH-FastSyntax [Automatic]" "Errors and Help" Exit
+select opcion in Terminales "LSD [Maual Instalation]" "Neofetch [Automatic]" "Nano [Automatic]" "Mega [Manual Instalations]" "7z [Automatic]" "Battery Laptop Improve [Automatic]" "SHAsum [Automatic]" "Tor Browser [Manual Instalation]" "Vivaldi Browser [Manual Instalation]" Git "ZSH [Automatic]" "OH-MY-ZSH [Automatic]" "ZSH-Autosuggestions [Automatic]" "ZSH-FastSyntax [Automatic]" "Errors and Help" Exit
 do
     case $opcion in
-# 1 Terminator
-        "Terminator [Automatic]")
-            echo -e "\t\t\t\e[38:5:197m88888888888 8888888888 8888888b.  888b     d888 8888888 888b    888        d8888 88888888888  .d88888b.  8888888b.\e[0m"
-            echo -e "\t\t\t    \e[38:5:197m888     888        888   Y88b 8888b   d8888   888   8888b   888       d88888     888     d88Pi iY88b 888   Y88b\e[0m"
-            echo -e "\t\t\t    \e[38:5:198m888     888        888    888 88888b.d88888   888   88888b  888      d88P888     888     888     888 888    888\e[0m"
-            echo -e "\t\t\t    \e[38:5:198m888     8888888    888   d88P 888Y88888P888   888   888Y88b 888     d88P 888     888     888     888 888   d88P\e[0m"
-            echo -e "\t\t\t    \e[38:5:199m888     888        8888888Pl  888 Y888P 888   888   888 Y88b888    d88P  888     888     888     888 8888888Pl\e[0m"
-            echo -e "\t\t\t    \e[38:5:199m888     888        888 T88b   888  Y8P  888   888   888  Y88888   d88P   888     888     888     888 888 T88b\e[0m"
-            echo -e "\t\t\t    \e[38:5:200m888     888        888  T88b  888   '   888   888   888   Y8888  d8888888888     888     Y88b. .d88P 888  T88b\e[0m"
-            echo -e "\t\t\t    \e[38:5:200m888     8888888888 888   T88b 888       888 8888888 888    Y888 d88P     888     888      lY88888Pl  888   T88b\e[0m\n"
-            echo -e "\t\t\t\t\t\t\t\t\t\e[38:5:46m[ AUTO INSTALATION ]\e[0m"
-            echo -e '''\n\t\e[1;31mTerminator\e[0m \e[38:5:160mis an open-source terminal emulator programmed in Java. ━╤-╦︻[▀̿̿Ĺ̯̿̿▀̿ ̿]\e[0m
-                \e[38:5:161mFeatures\e[0m 
-                \t\e[38:5:161mIt allows you to organize multiple terminals in a single window, so that you can have several sessions open simultaneously.\e[0m
-                \t\e[38:5:162mYou can write to multiple terminals simultaneously, this allows you to launch the same command in different sessions.\e[0m
-                \t\e[38:5:162mIt has a large number of keyboard shortcuts with which to manage the terminals.\e[0m
-                \t\e[38:5:163mYou can rearrange the window layout by dragging and dropping with the mouse.\e[0m
-                \t\e[38:5:163mYou can save different layouts and profiles using the graphical interface.\e[0m
-                \t\e[38:5:164mYou can take screenshots of a single terminal.\e[0m
-                \t\e[38:5:164mSupports plugins.\e[0m
-                \t\e[38:5:165mSupports tabs.\e[0m\n'''
-                read -p "Do you want to install Terminator?: Yes[y] / Not[n] / Exit[x] " ynx
-                    case $ynx in
-                        [Yy]* ) sudo add-apt-repository ppa:gnome-terminator ; sudo apt-get install terminator ; 
-                                sudo apt-get update ; sudo apt-get upgrade;;
-                        [Nn]* ) read -p "Press [Enter] to show Menu";;
-                        [Xx]* ) exit;;
-                        * ) echo -e "\e[1;36mPress\e[0m \e[38:5:46m[Enter]\e[0m \e[1;36mto show Menu\e[0m";;
+# 1 Terminales
+        Terminales)
+        echo -e "\n\t\t\t\t\t\t\t\t   \e[38:5:13m********\e[0m \e[0m \e[38:5:197mTerminals Menu\e[0m \e[38:5:13m********\e[0m\n"
+            select terminals in Terminator Tilix "Back Main Menu"
+                do
+                    case $terminals in
+# Menu Terminales-Terminator
+                        Terminator)
+                            echo -e "\t\t\t\e[38:5:197m88888888888 8888888888 8888888b.  888b     d888 8888888 888b    888        d8888 88888888888  .d88888b.  8888888b.\e[0m"
+                            echo -e "\t\t\t    \e[38:5:197m888     888        888   Y88b 8888b   d8888   888   8888b   888       d88888     888     d88Pi iY88b 888   Y88b\e[0m"
+                            echo -e "\t\t\t    \e[38:5:198m888     888        888    888 88888b.d88888   888   88888b  888      d88P888     888     888     888 888    888\e[0m"
+                            echo -e "\t\t\t    \e[38:5:198m888     8888888    888   d88P 888Y88888P888   888   888Y88b 888     d88P 888     888     888     888 888   d88P\e[0m"
+                            echo -e "\t\t\t    \e[38:5:199m888     888        8888888Pl  888 Y888P 888   888   888 Y88b888    d88P  888     888     888     888 8888888Pl\e[0m"
+                            echo -e "\t\t\t    \e[38:5:199m888     888        888 T88b   888  Y8P  888   888   888  Y88888   d88P   888     888     888     888 888 T88b\e[0m"
+                            echo -e "\t\t\t    \e[38:5:200m888     888        888  T88b  888   '   888   888   888   Y8888  d8888888888     888     Y88b. .d88P 888  T88b\e[0m"
+                            echo -e "\t\t\t    \e[38:5:200m888     8888888888 888   T88b 888       888 8888888 888    Y888 d88P     888     888      lY88888Pl  888   T88b\e[0m\n"
+                            echo -e "\t\t\t\t\t\t\t\t\t\e[38:5:46m[ AUTO INSTALATION ]\e[0m"
+                            echo -e '''\n\t\t\t\t\t\t\e[1;31mTerminator\e[0m \e[38:5:160mis an open-source terminal emulator programmed in Java. ━╤-╦︻[▀̿̿Ĺ̯̿̿▀̿ ̿]\e[0m
+                            \e[38:5:161mFeatures\e[0m 
+                                \e[38:5:161mIt allows you to organize multiple terminals in a single window, so that you can have several sessions open simultaneously.\e[0m
+                                \e[38:5:162mYou can write to multiple terminals simultaneously, this allows you to launch the same command in different sessions.\e[0m
+                                \e[38:5:162mIt has a large number of keyboard shortcuts with which to manage the terminals.\e[0m
+                                \e[38:5:163mYou can rearrange the window layout by dragging and dropping with the mouse.\e[0m
+                                \e[38:5:163mYou can save different layouts and profiles using the graphical interface.\e[0m
+                                \e[38:5:164mYou can take screenshots of a single terminal.\e[0m
+                                \e[38:5:164mSupports plugins.\e[0m
+                                \e[38:5:165mSupports tabs.\e[0m\n'''
+                                read -p "Do you want to install Terminator?: Yes[y] / Not[Any Key] / Exit to Main Menu[x] " ynx
+                                    case $ynx in
+                                        [Yy]* ) sudo add-apt-repository ppa:gnome-terminator ; sudo apt-get install terminator ; 
+                                                sudo apt-get update ; sudo apt-get upgrade;;
+                                        [Nn]* ) read -p "Press [Enter] to show Terminals Menu";;
+                                        [Xx]* ) break;;
+                                        * ) echo -e "\n\e[1;36mPress\e[0m \e[38:5:46m[ Enter ]\e[0m \e[1;36mto show Terminals Menu\e[0m\n";; 
+                                    esac
+                                ;;
+# Menu Terminales-Tilix
+                        Tilix)
+                            echo -e "Tilix is an advanced GTK3 tiling terminal emulator that follows the Gnome Human Interface Guidelines"
+                                read -p "Do you want to install Tilix Yes[y] / Not[Any Key] / Exit[x]" ynx
+                                    case $ynx in
+                                        [Yy]* ) sudo apt-get update ; sudo apt-get upgrade;;
+                                        [Nn]* ) read -p "Press [Enter] to show Menu";;
+                                        [Xx]* ) break;;
+                                        * ) echo -e "\n\e[1;36mPress\e[0m \e[38:5:46m[Enter]\e[0m \e[1;36mto show Terminals Menu\e[0m\n";;
+                                    esac
+                        ;;
+# Menu Terminales-Regresar al menu
+                        "Back Main Menu")
+                        read -p "Do you want to Back Main Manu?: Yes[y] / Not[N]: " yn
+                            case $yn in
+                                [Yy]* ) break;;
+                                [Nn]* ) read -p "Press [Enter] to show Menu";;
+                                * ) echo -e "\n\e[1;36mPress\e[0m \e[38:5:46m[Enter]\e[0m \e[1;36mto show Menu\e[0m\n";;
+                            esac
+                        ;;
+                        *)  echo -e "\n\e[1;5;31mYou have not chosen a valid option, Try again\e[0m \n\n\e[0;96mPlease select an option between (1..2)!\e[0m \e[38:5:220mPress\e[0m \e[38:5:46m[Enter]\e[0m \e[38:5:220mto show Terminals Menu\e[0m";;
                     esac
-            ;;
+                done
+        ;;
 # 2 LSDS
         "LSD [Maual Instalation]")
             echo -e "\t\t\t\e[38:5:2m888\e[0m       \e[38:5:3m.d8888b.\e[0m  \e[38:5:1m8888888b.\e[0m            \e[38:5:4m.d88\e[0m   \e[38:5:5m888\e[0m               \e[38:5:7m888\e[0m          \e[38:5:2m888\e[0m          \e[38:5:3m888\e[0m                            \e[38:5:6m88b.\e[0m"
@@ -336,8 +366,7 @@ Do you want to install ZSH-FastSyntax?: Yes[y] / Not[n] / Exit[x] ''' ynx
                 esac
             ;;
         *)
-            echo -e "\n\e[1;5;31mYou have not chosen a valid option, Try again\e[0m \n\n\e[0;96mPlease select an option between (1..18)!\e[0m \e[38:5:220mPress\e[0m \e[38:5:46m[Enter]\e[0m \e[38:5:220mto show Menu\e[0m"
-            ;;
+            echo -e "\n\e[1;5;31mYou have not chosen a valid option, Try again\e[0m \n\n\e[0;96mPlease select an option between (1..18)!\e[0m \e[38:5:220mPress\e[0m \e[38:5:46m[Enter]\e[0m \e[38:5:220mto show Menu\e[0m";;
     esac
 done
 #instalar
