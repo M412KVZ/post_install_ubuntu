@@ -1,17 +1,18 @@
 #!/bin/bash
 
-echo -e "\t\t\t\t\t\t\t   \e[38:5:13m**********\e[0m \e[38:5:202mPlugins Instalation on Debian\e[0m \e[38:5:13m**********\e[0m"
+echo -e "\t\t\t\t\t\t\t   \e[38:5:13m**********\e[0m \e[1m\e[38:5:202mPlugins Instalation on Debian\e[0m \e[38:5:13m**********\e[0m"
 
-echo -e "\n\t\t\t\t\t\t\t\t\t\e[38:5:13m**********\e[0m \e[38:5:197mMENU\e[0m \e[38:5:13m**********\e[0m\n"
+echo -e "\n\t\t\t\t\t\t\t\t     \e[38:5:13m**********\e[0m \e[1m\e[38:5:197mMAIN MENU\e[0m \e[38:5:13m**********\e[0m\n"
 
-PS3="Please choose a number: "
-
-select opcion in Terminales "LSD [Maual Instalation]" "Neofetch [Automatic]" "Nano [Automatic]" "Mega [Manual Instalations]" "7z [Automatic]" "Battery Laptop Improve [Automatic]" "SHAsum [Automatic]" "Tor Browser [Manual Instalation]" "Vivaldi Browser [Manual Instalation]" Git "ZSH [Automatic]" "OH-MY-ZSH [Automatic]" "ZSH-Autosuggestions [Automatic]" "ZSH-FastSyntax [Automatic]" "Errors and Help" Exit
+#PS3="Please choose a number: " 
+echo -e "\e[1m\e[38:5:197mPlease choose a number: \e[0m\n" ; PS3="option: "
+select opcion in "Terminals Menu" "LSD [Maual Instalation]" "Neofetch [Automatic]" "Nano [Automatic]" "Mega [Manual Instalations]" "7z [Automatic]" "Battery Laptop Improve [Automatic]" "SHAsum [Automatic]" "Tor Browser [Manual Instalation]" "Vivaldi Browser [Manual Instalation]" Git "ZSH [Automatic]" "OH-MY-ZSH [Automatic]" "ZSH-Autosuggestions [Automatic]" "ZSH-FastSyntax [Automatic]" "Errors and Help" Exit
 do
     case $opcion in
 # 1 Terminales
-        Terminales)
-        echo -e "\n\t\t\t\t\t\t\t\t   \e[38:5:13m********\e[0m \e[0m \e[38:5:197mTerminals Menu\e[0m \e[38:5:13m********\e[0m\n"
+        "Terminals Menu")
+        echo -e "\n\t\t\t\t\t\t\t\t    \e[38:5:13m********\e[0m \e[0m \e[1m\e[38:5:197mTerminals Menu\e[0m \e[38:5:13m********\e[0m\n"
+        echo -e "\e[1m\e[38:5:197mPlease choose an option\e[0m"
             select terminals in Terminator Tilix "Back Main Menu"
                 do
                     case $terminals in
@@ -36,36 +37,59 @@ do
                                 \e[38:5:164mYou can take screenshots of a single terminal.\e[0m
                                 \e[38:5:164mSupports plugins.\e[0m
                                 \e[38:5:165mSupports tabs.\e[0m\n'''
-                                read -p "Do you want to install Terminator?: Yes[y] / Not[Any Key] / Exit to Main Menu[x] " ynx
-                                    case $ynx in
-                                        [Yy]* ) sudo add-apt-repository ppa:gnome-terminator ; sudo apt-get install terminator ; 
-                                                sudo apt-get update ; sudo apt-get upgrade;;
-                                        [Nn]* ) read -p "Press [Enter] to show Terminals Menu";;
-                                        [Xx]* ) break;;
-                                        * ) echo -e "\n\e[1;36mPress\e[0m \e[38:5:46m[ Enter ]\e[0m \e[1;36mto show Terminals Menu\e[0m\n";; 
+                                opcion=0
+                                while [ $opcion -ne 3 ]; do
+                                    echo -e '''\t\tDo you want to install Terminator?
+                                    [ 1 ] Yes
+                                    [ 2 ] Not, back to Terminals Menu
+                                    [ 3 ] Exit install'''
+                                    read opcion
+                                        case $opcion in                                            
+                                        1) echo "Instalando..." ; sudo add-apt-repository ppa:gnome-terminator ; 
+                                            sudo apt-get update ; sudo apt-get upgrade ; sudo apt-get install terminator ;;
+                                        2) echo -e "\e[1m\e[38:5:197mPress [ Enter ] to back Terminals Menu \e[0m\n"; break;;
+                                        3) exit;;
+                                        *)  echo -e "\n\e[1;5;31mYou have not chosen a valid option, Try again\e[0m \n\n\e[0;96mPlease [ Enter ] to continue\e[0m"
+                                            opcion=0;;
                                     esac
-                                ;;
+                                    echo ""
+                                    read -p ""
+                                    clear
+                                done
+                        ;;
+                                #echo -e "\e[1m\e[38:5:197mDo you want to install Terminator?: Yes [Yy] / Not [Nn] / Exit to Main Menu [Xx] \e[0m"; 
+                                #read -p "option: " ynx
+                                #read -p "Do you want to install Terminator?: Yes [y] / Back to Menu [n] / Back to Main Menu [m]: " ynm
+                                #    case $ynx in
+                                #        [Yy]* ) sudo add-apt-repository ppa:gnome-terminator ; sudo apt-get install terminator ; 
+                                #                sudo apt-get update ; sudo apt-get upgrade;;
+                                #        [Nn]* ) echo -e "\e[1m\e[38:5:197mPress [ Enter ] to back Terminals Menu \e[0m\n" ; 
+                                #                read -p "" ; echo -e "\e[1m\e[38:5:197mPlease choose an option\e[0m";;
+                                #        [Xx]* ) echo -e "\n\e[1;36mPress\e[0m \e[38:5:46m[ Enter ]\e[0m \e[1;36mto show Menu\e[0m\n"; break;;
+                                #        *) echo -e "\n\e[1;5;31mYou have not chosen a valid option, Try again\e[0m \n\n\e[0;96mPlease select an option between [Yy] | [Nn] | [Mm]!\e[0m \e[38:5:220mPress\e[0m \e[38:5:46m[ Enter ]\e[0m \e[38:5:220mto show Terminals Menu\e[0m";; 
+                                #    esac
+                                #;;
 # Menu Terminales-Tilix
                         Tilix)
                             echo -e "Tilix is an advanced GTK3 tiling terminal emulator that follows the Gnome Human Interface Guidelines"
-                                read -p "Do you want to install Tilix Yes[y] / Not[Any Key] / Exit[x]" ynx
-                                    case $ynx in
+                                read -p "Do you want to install Tilix?: Yes[y] / Not[Any Key] / Back to Main Menu[x] " ynx
+                                    case $ynx in 
                                         [Yy]* ) sudo apt-get update ; sudo apt-get upgrade;;
-                                        [Nn]* ) read -p "Press [Enter] to show Menu";;
+                                        [Nn]* ) read -p "Press [ Enter ] to show Menu";;
                                         [Xx]* ) break;;
-                                        * ) echo -e "\n\e[1;36mPress\e[0m \e[38:5:46m[Enter]\e[0m \e[1;36mto show Terminals Menu\e[0m\n";;
+                                        * ) echo -e "\n\e[1;36mPress\e[0m \e[38:5:46m[ Enter ]\e[0m \e[1;36mto show Terminals Menu\e[0m\n";;
                                     esac
                         ;;
 # Menu Terminales-Regresar al menu
                         "Back Main Menu")
                         read -p "Do you want to Back Main Manu?: Yes[y] / Not[N]: " yn
                             case $yn in
-                                [Yy]* ) break;;
-                                [Nn]* ) read -p "Press [Enter] to show Menu";;
-                                * ) echo -e "\n\e[1;36mPress\e[0m \e[38:5:46m[Enter]\e[0m \e[1;36mto show Menu\e[0m\n";;
+                                [Yy]* ) echo -e "\n\e[1;36mPress\e[0m \e[38:5:46m[ Enter ]\e[0m \e[1;36mto show Menu\e[0m\n"; break;;
+                                [Nn]* ) read -p "Press [ Enter ] to show Menu";;
+                                * ) echo -e "\n\e[1;36mPress\e[0m \e[38:5:46m[ Enter ]\e[0m \e[1;36mto show Menu\e[0m\n";;
                             esac
                         ;;
-                        *)  echo -e "\n\e[1;5;31mYou have not chosen a valid option, Try again\e[0m \n\n\e[0;96mPlease select an option between (1..2)!\e[0m \e[38:5:220mPress\e[0m \e[38:5:46m[Enter]\e[0m \e[38:5:220mto show Terminals Menu\e[0m";;
+                        *)  echo -e "\n\e[1;5;31mYou have not chosen a valid option, Try again\e[0m \n\n\e[0;96mPlease select an option between (1..3)!\e[0m \e[38:5:220mPress\e[0m \e[38:5:46m[ Enter ]\e[0m \e[38:5:220mto show Terminals Menu\e[0m";;
                     esac
                 done
         ;;
@@ -358,6 +382,7 @@ Do you want to install ZSH-FastSyntax?: Yes[y] / Not[n] / Exit[x] ''' ynx
             ;;
 # 17 Exit
         Exit)
+        echo -e "\n"
             read -p "Do you want to Exit Menu Instalation?: Yes[y] / Or press [N] to retun Menu Menu Instalation:" yn
                 case $yn in
                     [Yy]* ) exit;;
@@ -367,6 +392,7 @@ Do you want to install ZSH-FastSyntax?: Yes[y] / Not[n] / Exit[x] ''' ynx
             ;;
         *)
             echo -e "\n\e[1;5;31mYou have not chosen a valid option, Try again\e[0m \n\n\e[0;96mPlease select an option between (1..18)!\e[0m \e[38:5:220mPress\e[0m \e[38:5:46m[Enter]\e[0m \e[38:5:220mto show Menu\e[0m";;
+        
     esac
 done
 #instalar
