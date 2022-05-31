@@ -10,9 +10,9 @@ select Menu in "Automatic Install" "Custom Install"
 # Choose Instalation Menu
             "Automatic Install")
             clear
-                echo -e "\n\n\t\t\t\t\t\t\t   \e[38:5:13m**********\e[0m \e[1m\e[38:5:202mYOU CHOOSE AUTOMATIC INSTALL\e[0m \e[38:5:13m**********\e[0m"
                 AutomaticInstall=0
                     while [ $AutomaticInstall -ne 3 ]; do
+                        echo -e "\n\n\t\t\t\t\t\t\t   \e[38:5:13m**********\e[0m \e[1m\e[38:5:202mYOU CHOOSE AUTOMATIC INSTALL\e[0m \e[38:5:13m**********\e[0m"
                         echo -e "\n\t\e[1m\e[38:5:118mThe follow programms will be installed automatically"
                         echo -e "\n\t\e[1m\e[38:5:45m   1) pip\e[0m             \e[1m\e[36m11) bat\e[0m           \e[1m\e[36m21) gimp\e[0m"
                         echo -e "\t\e[1m\e[38:5:45m   2) curl\e[0m            \e[1m\e[36m12) tlp\e[0m           \e[1m\e[36m22) lolcat\e[0m"
