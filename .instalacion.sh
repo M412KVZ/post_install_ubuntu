@@ -51,6 +51,8 @@ select Menu in "Automatic Install" "Custom Install"
                                 sudo apt-get update && sudo apt-get upgrade && sudo apt-get install cmatrix -y &&
                                 sudo apt-get update && sudo apt-get upgrade && sudo apt-get install flatpak -y &&
                                 sudo apt-get update && sudo apt-get upgrade && sudo apt-get install snapd -y &&
+                                sudo apt-get update && sudo apt-get upgrade && sudo apt-get install gimp -y &&
+                                sudo apt-get update && sudo apt-get upgrade && sudo apt-get install lolcat -y &&
                                 echo -e "\e[1m\e[38:5:46mInstalation is finished\e[0m\n" && break;;
                             2) echo -e "\n\e[1m\e[38:5:197mPress [ Enter ] to back Menu \e[0m\n"; break;;
                             3) echo -e "\nBye!!!" && exit;;
