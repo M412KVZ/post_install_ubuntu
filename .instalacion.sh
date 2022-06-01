@@ -564,6 +564,8 @@ select Menu in "Automatic Install" "Custom Install"
 #            Lolcat es una utilidad para Linux, BSD y OSX que concatena de manera similar al comando cat y le agrega colores de 
 #            arcoíris. Lolcat se utiliza principalmente para colorear texto en forma de arco iris en la terminal de Linux.
 #        caosay (Pendiente)
+#        cbonsai (Pendiente)
+#             cbonsai -l -t 1 -i
 #        fortune (Pendiente)
 #        power level 10k (Pendiente por eleccion vs ho-my-posh)
 #        oh-my-posh (Pendiente por eleccion  entre power level 10k)
