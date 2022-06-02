@@ -574,6 +574,9 @@ select Menu in "Automatic Install" "Custom Install"
 #               transmission-cli "arcvhivo.torrent"
 #               transmission-cli "magnetlink debe estar entre comillas"
 #	     youtubedl
+#        gs 
+#            comprimir archivo pdf
+#                   gs -dNOPAUSE -dQUIET -dBATCH -sDEVICE=pdfwrite -dCompatibilityLevel=1.6 -dPDFSETTINGS=/printer -sOutputFile=test.pdf rfc.pdf 
 #        PDF Arranger (Pendiente)
 #            Agrega o elimina hojas de un archivo
 #                   sudo apt install pdfarranger
