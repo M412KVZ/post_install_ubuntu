@@ -574,6 +574,9 @@ select Menu in "Automatic Install" "Custom Install"
 #               transmission-cli "arcvhivo.torrent"
 #               transmission-cli "magnetlink debe estar entre comillas"
 #	     youtubedl
+#        PDF Arranger (Pendiente)
+#            Agrega o elimina hojas de un archivo
+#                   sudo apt install pdfarranger
 #        trash-cli (Pendiente) https://github.com/andreafrancia/trash-cli
 #            trash-put           trash files and directories.
 #            trash-empty         empty the trashcan(s).
